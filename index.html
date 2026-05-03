@@ -1,0 +1,2311 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0A0F0D" />
+    <title>
+      ZIC | Zulia Industrial Constructions · Construcción Industrial Venezuela
+      desde 1973
+    </title>
+    <meta
+      name="description"
+      content="ZIC, C.A. — empresa venezolana de construcción industrial pesada con más de 50 años. Más de 460 obras civiles, mecánicas, eléctricas, IPC, tuberías y obras marítimas para el sector petrolero, gas, petroquímico, minero y carbonífero. ISO 9001:2015."
+    />
+    <meta
+      name="keywords"
+      content="ZIC, Zulia Industrial Constructions, construcción industrial Venezuela, IPC, tendido de tuberías, obras marítimas, petrolero, petroquímico, Maracaibo, PDVSA, Shell, Chevron, Repsol, ISO 9001"
+    />
+    <meta name="author" content="ZIC, C.A." />
+    <link rel="canonical" href="https://zic.com.ve/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_VE" />
+    <meta
+      property="og:title"
+      content="ZIC | Construcción Industrial Venezuela desde 1973"
+    />
+    <meta
+      property="og:description"
+      content="+460 obras · +9.1M Horas Hombre · +1000 km de tubería · ISO 9001:2015"
+    />
+    <meta
+      property="og:image"
+      content="https://zic.com.ve/assets/hero-aerial.jpg"
+    />
+    <meta property="og:url" content="https://zic.com.ve/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/logo-zic.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              zic: {
+                green: "rgb(var(--zic-green) / <alpha-value>)",
+                "green-deep": "rgb(var(--zic-green-deep) / <alpha-value>)",
+                "green-bright": "rgb(var(--zic-green-bright) / <alpha-value>)",
+                deep: "rgb(var(--zic-deep) / <alpha-value>)",
+                base: "rgb(var(--zic-base) / <alpha-value>)",
+                elev: "rgb(var(--zic-elev) / <alpha-value>)",
+                steel: "rgb(var(--zic-steel) / <alpha-value>)",
+                fg: "rgb(var(--zic-fg) / <alpha-value>)",
+                muted: "rgb(var(--zic-muted) / <alpha-value>)",
+                line: "rgb(var(--zic-line) / <alpha-value>)",
+              },
+            },
+            fontFamily: {
+              sans: ['"IBM Plex Sans"', "system-ui", "sans-serif"],
+              mono: ['"IBM Plex Mono"', "ui-monospace", "monospace"],
+              display: ['"Russo One"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* ===== Theme tokens (RGB channels for tailwind alpha) ===== */
+      :root,
+      [data-theme="dark"] {
+        color-scheme: dark;
+        --zic-green: 22 163 74;
+        --zic-green-deep: 14 122 51;
+        --zic-green-bright: 34 197 94;
+        --zic-deep: 10 15 13;
+        --zic-base: 17 22 19;
+        --zic-elev: 22 28 24;
+        --zic-steel: 42 47 44;
+        --zic-fg: 241 245 242;
+        --zic-muted: 152 163 156;
+        --zic-line: 255 255 255;
+        --grain-dot: rgba(255, 255, 255, 0.04);
+        --hero-overlay-top: rgba(10, 15, 13, 0.55);
+        --hero-overlay-mid: rgba(10, 15, 13, 0.85);
+        --hero-overlay-end: #0a0f0d;
+        --image-overlay-top: rgba(10, 15, 13, 0.45);
+        --image-overlay-bot: rgba(10, 15, 13, 0.85);
+        --logo-green-1: #1d8c3a;
+        --logo-green-2: #0c5e2a;
+        --logo-gray: #b8b8b8;
+        --logo-dark: #ffffff;
+      }
+      [data-theme="light"] {
+        color-scheme: light;
+        --zic-green: 22 163 74;
+        --zic-green-deep: 14 122 51;
+        --zic-green-bright: 34 197 94;
+        --zic-deep: 250 250 249;
+        --zic-base: 245 245 244;
+        --zic-elev: 255 255 255;
+        --zic-steel: 231 231 229;
+        --zic-fg: 15 23 20;
+        --zic-muted: 90 95 92;
+        --zic-line: 15 23 20;
+        --grain-dot: rgba(15, 23, 20, 0.05);
+        --hero-overlay-top: rgba(15, 23, 20, 0.35);
+        --hero-overlay-mid: rgba(15, 23, 20, 0.55);
+        --hero-overlay-end: rgba(250, 250, 249, 0.9);
+        --image-overlay-top: rgba(15, 23, 20, 0.25);
+        --image-overlay-bot: rgba(15, 23, 20, 0.65);
+        --logo-green-1: #1d8c3a;
+        --logo-green-2: #0c5e2a;
+        --logo-gray: #7d7d7d;
+        --logo-dark: #1a1a1a;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: rgb(var(--zic-deep));
+        color: rgb(var(--zic-fg));
+        font-feature-settings: "ss01", "cv11";
+        -webkit-font-smoothing: antialiased;
+        transition:
+          background-color 0.4s ease,
+          color 0.4s ease;
+      }
+      ::selection {
+        background: rgb(var(--zic-green));
+        color: #fff;
+      }
+      .grain::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          var(--grain-dot) 1px,
+          transparent 1px
+        );
+        background-size: 3px 3px;
+        pointer-events: none;
+        mix-blend-mode: overlay;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+      .hero-image {
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--hero-overlay-top) 0%,
+            var(--hero-overlay-mid) 70%,
+            var(--hero-overlay-end) 100%
+          ),
+          url("assets/hero-aerial.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .offshore-image {
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--image-overlay-top) 0%,
+            var(--image-overlay-bot) 100%
+          ),
+          url("assets/offshore.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .onshore-image {
+        background-image:
+          linear-gradient(
+            180deg,
+            var(--image-overlay-top) 0%,
+            var(--image-overlay-bot) 100%
+          ),
+          url("assets/plant-aerial.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .green-glow {
+        box-shadow:
+          0 0 0 1px rgba(22, 163, 74, 0.35),
+          0 8px 32px -8px rgba(22, 163, 74, 0.35);
+      }
+      .service-card {
+        transition:
+          border-color 0.25s ease,
+          background-color 0.25s ease,
+          transform 0.25s ease;
+      }
+      .service-card:hover {
+        border-color: rgba(22, 163, 74, 0.6);
+        background-color: rgba(22, 163, 74, 0.05);
+      }
+      .logo-tile {
+        color: rgb(var(--zic-muted));
+        transition:
+          color 0.2s ease,
+          border-color 0.2s ease,
+          background-color 0.2s ease;
+      }
+      .logo-tile:hover {
+        color: rgb(var(--zic-fg));
+        border-color: rgba(22, 163, 74, 0.4);
+        background-color: rgba(22, 163, 74, 0.04);
+      }
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+      details summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      /* ===== ZIC Logo (theme-aware) ===== */
+      .zic-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        line-height: 1;
+        user-select: none;
+      }
+      .zic-logo .stripes {
+        height: 1.6em;
+        width: auto;
+        flex-shrink: 0;
+      }
+      .zic-logo .stripes .s1 {
+        fill: var(--logo-green-1);
+      }
+      .zic-logo .stripes .s2 {
+        fill: var(--logo-green-2);
+      }
+      .zic-logo .stripes .s3 {
+        fill: var(--logo-gray);
+      }
+      .zic-logo .stripes .s4 {
+        fill: var(--logo-dark);
+      }
+      .zic-logo .word {
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        color: var(--logo-dark);
+        letter-spacing: -0.04em;
+        text-transform: lowercase;
+        font-size: 1.45em;
+        line-height: 0.85;
+      }
+      /* ===== Theme toggle button ===== */
+      .theme-toggle {
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        border: 1px solid rgb(var(--zic-line) / 0.12);
+        color: rgb(var(--zic-fg));
+        background: rgb(var(--zic-line) / 0.04);
+        cursor: pointer;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease,
+          border-color 0.2s ease;
+      }
+      .theme-toggle:hover {
+        background: rgb(var(--zic-green) / 0.12);
+        border-color: rgb(var(--zic-green) / 0.4);
+        color: rgb(var(--zic-green));
+      }
+      .theme-toggle .icon-sun {
+        display: none;
+      }
+      .theme-toggle .icon-moon {
+        display: block;
+      }
+      [data-theme="light"] .theme-toggle .icon-sun {
+        display: block;
+      }
+      [data-theme="light"] .theme-toggle .icon-moon {
+        display: none;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+        body,
+        .theme-toggle {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased">
+    <!-- ========== NAV ========== -->
+    <header
+      class="fixed top-0 inset-x-0 z-50 border-b border-zic-line/5 backdrop-blur-md bg-zic-deep/70"
+    >
+      <div
+        class="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between"
+      >
+        <a
+          href="#top"
+          class="zic-logo text-[14px]"
+          style="font-size: 14px"
+          aria-label="ZIC inicio"
+        >
+          <svg
+            class="stripes"
+            viewBox="0 0 70 60"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect class="s1" x="2" y="4" width="58" height="9" rx="4.5" />
+            <rect class="s2" x="6" y="18" width="58" height="9" rx="4.5" />
+            <rect class="s3" x="10" y="32" width="58" height="9" rx="4.5" />
+            <rect class="s4" x="14" y="46" width="58" height="9" rx="4.5" />
+          </svg>
+          <span class="word">zic</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-zic-muted">
+          <a href="#trayectoria" class="hover:text-zic-fg transition-colors"
+            >Trayectoria</a
+          >
+          <a href="#servicios" class="hover:text-zic-fg transition-colors"
+            >Servicios</a
+          >
+          <a href="#fortalezas" class="hover:text-zic-fg transition-colors"
+            >Fortalezas</a
+          >
+          <a href="#clientes" class="hover:text-zic-fg transition-colors"
+            >Clientes</a
+          >
+          <a href="#certificaciones" class="hover:text-zic-fg transition-colors"
+            >Certificaciones</a
+          >
+          <a href="#contacto" class="hover:text-zic-fg transition-colors"
+            >Contacto</a
+          >
+        </nav>
+        <div class="flex items-center gap-3">
+          <button
+            type="button"
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Cambiar tema claro/oscuro"
+          >
+            <svg
+              class="icon-moon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+          </button>
+          <a
+            href="#contacto"
+            class="inline-flex items-center gap-2 rounded-full bg-zic-green px-4 py-2 text-sm font-semibold text-white hover:bg-zic-green-deep transition-colors cursor-pointer"
+          >
+            Cotizar proyecto
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section
+      id="top"
+      class="relative min-h-[100svh] hero-image grain flex items-end overflow-hidden"
+    >
+      <!-- corner brand strip -->
+      <div
+        class="absolute top-24 left-5 lg:left-8 flex items-center gap-3 text-zic-muted"
+      >
+        <div class="w-10 h-px bg-zic-green"></div>
+        <span class="font-mono text-xs tracking-[0.2em] uppercase"
+          >Desde 1973 · Zulia, Venezuela</span
+        >
+      </div>
+
+      <div class="relative max-w-7xl mx-auto px-5 lg:px-8 pb-20 pt-40 w-full">
+        <div class="max-w-4xl">
+          <h1
+            class="font-bold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] tracking-tight"
+          >
+            Construimos la
+            <span class="text-zic-green">infraestructura industrial</span>
+            de Venezuela.
+          </h1>
+          <p
+            class="mt-8 text-lg lg:text-xl text-zic-muted max-w-2xl leading-relaxed"
+          >
+            Más de 50 años ejecutando obras civiles, mecánicas, eléctricas, IPC
+            y marítimas para los sectores petrolero, gas, petroquímico y minero
+            del país.
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a
+              href="#servicios"
+              class="inline-flex items-center gap-2 rounded-full bg-zic-green px-6 py-3 text-sm font-semibold text-white hover:bg-zic-green-deep transition-colors cursor-pointer"
+            >
+              Ver servicios
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              >
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a
+              href="#contacto"
+              class="inline-flex items-center gap-2 rounded-full border border-zic-line/15 px-6 py-3 text-sm font-semibold text-zic-fg hover:bg-zic-line/5 hover:border-zic-green transition-colors cursor-pointer"
+            >
+              Contactar equipo
+            </a>
+            <a
+              href="assets/brochure.pdf"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 px-2 py-3 text-sm text-zic-muted hover:text-zic-fg transition-colors"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+              Descargar brochure (PDF)
+            </a>
+          </div>
+        </div>
+
+        <!-- hero stats strip -->
+        <div
+          class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden backdrop-blur-sm"
+        >
+          <div class="bg-zic-deep/70 p-5 lg:p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-2"
+            >
+              Obras
+            </div>
+            <div
+              class="text-3xl lg:text-4xl font-bold tabular-nums"
+              data-counter="460"
+            >
+              0
+            </div>
+            <div class="text-xs text-zic-muted mt-1">ejecutadas</div>
+          </div>
+          <div class="bg-zic-deep/70 p-5 lg:p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-2"
+            >
+              Horas Hombre
+            </div>
+            <div class="text-3xl lg:text-4xl font-bold tabular-nums">
+              <span data-counter="9.1" data-decimals="1">0</span
+              ><span class="text-zic-muted">M</span>
+            </div>
+            <div class="text-xs text-zic-muted mt-1">acumuladas (10 años)</div>
+          </div>
+          <div class="bg-zic-deep/70 p-5 lg:p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-2"
+            >
+              Tubería
+            </div>
+            <div class="text-3xl lg:text-4xl font-bold tabular-nums">
+              <span data-counter="1000">0</span
+              ><span class="text-zic-muted">+</span>
+            </div>
+            <div class="text-xs text-zic-muted mt-1">km tendidos</div>
+          </div>
+          <div class="bg-zic-deep/70 p-5 lg:p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-2"
+            >
+              Equipos
+            </div>
+            <div class="text-3xl lg:text-4xl font-bold tabular-nums">
+              <span data-counter="150">0</span
+              ><span class="text-zic-muted">+</span>
+            </div>
+            <div class="text-xs text-zic-muted mt-1">propios pesados</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TRAYECTORIA / TIMELINE ========== -->
+    <section
+      id="trayectoria"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >01 — Trayectoria</span
+          >
+        </div>
+        <h2
+          class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
+        >
+          Cinco décadas construyendo el aparato industrial venezolano.
+        </h2>
+        <p class="mt-6 text-lg text-zic-muted max-w-3xl reveal">
+          Fundada en 1973 por Carmelo Moschella, ZIC, C.A. ha sido testigo y
+          protagonista de la modernización industrial del país. Hoy operamos
+          como parte del holding MC Industrias.
+        </p>
+
+        <div class="mt-16 relative">
+          <div
+            class="absolute left-0 right-0 top-7 h-px bg-gradient-to-r from-transparent via-zic-green/40 to-transparent hidden md:block"
+          ></div>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+            <div class="reveal">
+              <div class="relative">
+                <div
+                  class="w-3.5 h-3.5 rounded-full bg-zic-green ring-4 ring-zic-deep mx-0 md:mx-auto"
+                ></div>
+              </div>
+              <div class="mt-4 font-mono text-sm text-zic-green">1973</div>
+              <div class="mt-1 font-semibold">Fundación</div>
+              <p class="mt-2 text-sm text-zic-muted">
+                Zulia Industrial Constructions, C.A. nace en Maracaibo.
+              </p>
+            </div>
+            <div class="reveal">
+              <div class="relative">
+                <div
+                  class="w-3 h-3 rounded-full bg-white/30 ring-4 ring-zic-deep mx-0 md:mx-auto"
+                ></div>
+              </div>
+              <div class="mt-4 font-mono text-sm text-zic-muted">
+                1980 → 2000
+              </div>
+              <div class="mt-1 font-semibold">Expansión petrolera</div>
+              <p class="mt-2 text-sm text-zic-muted">
+                +1.000 km de tendido de tuberías; alianzas con Maraven, Lagoven,
+                Corpoven.
+              </p>
+            </div>
+            <div class="reveal">
+              <div class="relative">
+                <div
+                  class="w-3 h-3 rounded-full bg-white/30 ring-4 ring-zic-deep mx-0 md:mx-auto"
+                ></div>
+              </div>
+              <div class="mt-4 font-mono text-sm text-zic-muted">2007</div>
+              <div class="mt-1 font-semibold">Premio Construcción Zulia</div>
+              <p class="mt-2 text-sm text-zic-muted">
+                Mención honorífica de la Cámara de la Construcción del Zulia.
+              </p>
+            </div>
+            <div class="reveal">
+              <div class="relative">
+                <div
+                  class="w-3 h-3 rounded-full bg-white/30 ring-4 ring-zic-deep mx-0 md:mx-auto"
+                ></div>
+              </div>
+              <div class="mt-4 font-mono text-sm text-zic-muted">
+                2015 → 2025
+              </div>
+              <div class="mt-1 font-semibold">ISO 9001 + IPC</div>
+              <p class="mt-2 text-sm text-zic-muted">
+                Diez años certificados por Bureau Veritas; +7 proyectos IPC
+                nacionales e internacionales.
+              </p>
+            </div>
+            <div class="reveal">
+              <div class="relative">
+                <div
+                  class="w-3.5 h-3.5 rounded-full bg-zic-green ring-4 ring-zic-deep mx-0 md:mx-auto"
+                ></div>
+              </div>
+              <div class="mt-4 font-mono text-sm text-zic-green">Hoy</div>
+              <div class="mt-1 font-semibold">+50 años</div>
+              <p class="mt-2 text-sm text-zic-muted">
+                +460 obras entregadas. Operaciones en Zulia, Anzoátegui y Miami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section
+      id="servicios"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >02 — Servicios</span
+          >
+        </div>
+        <div class="grid lg:grid-cols-12 gap-8 items-end mb-16">
+          <h2
+            class="lg:col-span-7 font-bold text-4xl lg:text-6xl leading-tight tracking-tight reveal"
+          >
+            Ocho disciplinas. <br /><span class="text-zic-muted"
+              >Una sola compañía.</span
+            >
+          </h2>
+          <p class="lg:col-span-5 text-lg text-zic-muted reveal">
+            Desde el tendido de un oleoducto submarino hasta la construcción de
+            viviendas industriales y la procura internacional de equipos.
+            Operamos on-shore y off-shore con la misma exigencia.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
+        >
+          <!-- 1 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M2 12h2m16 0h2M6 12a6 6 0 0112 0M6 12v6m12-6v6M3 18h18M8 18h8"
+                />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">01</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Tendido de gasoductos y oleoductos
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Especialistas en oleoductos, gasoductos, poliductos y acueductos.
+              +1.000 km ejecutados bajo norma API 5L.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="9" width="6" height="12" />
+                <rect x="15" y="3" width="6" height="18" />
+                <path d="M9 13h6M3 21h18" />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">02</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Instalaciones petroleras y petroquímicas
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Estaciones de válvulas, plantas compresoras, estaciones de flujo,
+              eléctricas y petroquímicas.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-7h6v7" />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">03</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">Obras civiles</h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Edificaciones habitacionales, industriales, fundaciones de
+              concreto armado, canalizaciones, represas, diques de contención.
+            </p>
+          </div>
+          <!-- 4 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M2 18s2-3 5-3 5 3 5 3 2-3 5-3 5 3 5 3M2 22h20M5 14V8h2M11 14V6h2M17 14V10h2"
+                />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">04</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">Obras marítimas</h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Diques, muelles, dársenas, emisarios submarinos, astilleros
+              navales e infraestructuras terrestres portuarias.
+            </p>
+          </div>
+          <!-- 5 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 18l6-6 4 4 8-8M3 18h18M3 18v3h18v-3" />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">05</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Movimientos de tierra
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Drenajes, urbanismos, terraplenes, muros de contención, proyectos
+              mineros y cosecha de sal en salinas.
+            </p>
+          </div>
+          <!-- 6 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">06</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Electricidad e instrumentación
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Estaciones eléctricas, sistemas de distribución, plantas
+              termoeléctricas en alianza con nuestras obras.
+            </p>
+          </div>
+          <!-- 7 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">07</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Ingeniería, Procura y Construcción (IPC)
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Proyectos multidisciplinarios para la industria petrolera,
+              petroquímica y privada. Procura nacional e internacional.
+            </p>
+          </div>
+          <!-- 8 -->
+          <div
+            class="service-card bg-zic-deep p-7 border border-transparent reveal"
+          >
+            <div class="flex items-center justify-between mb-8">
+              <svg
+                class="text-zic-green"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 21V5l4-2 4 2 4-2 4 2 2-1v16M3 9h18M7 5v16M11 5v16M15 5v16M19 5v16"
+                />
+              </svg>
+              <span class="font-mono text-xs text-zic-muted">08</span>
+            </div>
+            <h3 class="font-semibold text-lg leading-snug">
+              Construcción y mantenimiento de muelles
+            </h3>
+            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+              Cambios de brazos de carga, componentes estructurales,
+              geotécnicos, hidrodinámicos y patológicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTORES ON-SHORE / OFF-SHORE ========== -->
+    <section class="relative border-t border-zic-line/5">
+      <div class="grid lg:grid-cols-2">
+        <div
+          class="onshore-image grain min-h-[420px] lg:min-h-[580px] p-10 lg:p-16 flex flex-col justify-end relative"
+        >
+          <div
+            class="font-mono text-xs uppercase tracking-[0.2em] text-zic-green mb-4"
+          >
+            Operación 01
+          </div>
+          <h3
+            class="font-bold text-4xl lg:text-5xl leading-tight tracking-tight"
+          >
+            Proyectos On Shore
+          </h3>
+          <ul
+            class="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-zic-muted"
+          >
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Obras civiles
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Eléctricas y
+              electromecánicas
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Movimientos de tierra
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Obras mecánicas
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> IPC y proyectos de planta
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Tendido de tuberías
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Mantenimiento de muelles
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Obras marítimas
+            </li>
+          </ul>
+        </div>
+        <div
+          class="offshore-image grain min-h-[420px] lg:min-h-[580px] p-10 lg:p-16 flex flex-col justify-end relative border-l border-zic-line/5"
+        >
+          <div
+            class="font-mono text-xs uppercase tracking-[0.2em] text-zic-green mb-4"
+          >
+            Operación 02
+          </div>
+          <h3
+            class="font-bold text-4xl lg:text-5xl leading-tight tracking-tight"
+          >
+            Proyectos Off Shore
+          </h3>
+          <ul
+            class="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-zic-muted"
+          >
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Módulo Calidad de Vida
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Reconstrucción Módulo C –
+              TJ4
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Estación de Flujo 11/7
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Plantas de inyección de agua
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Reparación de muelles
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Cambio de brazos de carga
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> CJZ Consorcio
+            </li>
+            <li class="flex gap-2">
+              <span class="text-zic-green">›</span> Lago de Maracaibo
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FORTALEZAS / STATS ========== -->
+    <section
+      id="fortalezas"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >03 — Fortalezas</span
+          >
+        </div>
+        <h2
+          class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
+        >
+          Cifras que respaldan medio siglo de operación.
+        </h2>
+
+        <div
+          class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
+        >
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Proyectos grandes
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="2">0</span
+              ><span class="text-zic-muted text-3xl">M h-h</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Manejo de proyectos con más de 2 millones de Horas Hombre sin
+              accidentes.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Tubería
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="1000">0</span
+              ><span class="text-zic-muted text-3xl">km</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Tendido en gasoductos, oleoductos, poliductos y acueductos.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Plantas
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="20">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Proyectos en refinerías y plantas de procesamiento.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              IPC
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="7">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Proyectos de Ingeniería, Procura y Construcción con las
+              principales firmas de Venezuela.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Movimiento de tierras
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="100">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Proyectos con capacidad superior a 1MM m³ por proyecto.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Izamientos
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="400">0</span
+              ><span class="text-zic-muted text-3xl">ton</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              9 módulos, 2 de compresión y 7 de Estación de Flujo con grúa.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Equipos propios
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="150">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Equipos pesados de construcción con alta eficiencia operativa.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Proveedores
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="200">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Con más de 20 años de relación comercial con ZIC.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-8">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Clientes
+            </div>
+            <div class="font-bold text-5xl tabular-nums">
+              +<span data-counter="20">0</span>
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Internacionales y nacionales con altos estándares de calidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCIA / GALLERY ========== -->
+    <section
+      class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >04 — Experiencia</span
+          >
+        </div>
+        <h2
+          class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
+        >
+          Obra ejecutada. <br /><span class="text-zic-muted">No promesas.</span>
+        </h2>
+      </div>
+
+      <div
+        class="max-w-[1600px] mx-auto px-5 lg:px-8 grid grid-cols-12 gap-3 lg:gap-4"
+      >
+        <figure
+          class="col-span-12 lg:col-span-7 relative aspect-[16/10] overflow-hidden rounded-xl border border-zic-line/5"
+        >
+          <img
+            src="assets/pipeline.jpg"
+            alt="Soldadura de tubería en tendido petrolero"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
+          >
+            <div
+              class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
+            >
+              01
+            </div>
+            <div class="font-semibold mt-1">
+              Tendido y soldadura de tuberías
+            </div>
+          </figcaption>
+        </figure>
+        <figure
+          class="col-span-12 lg:col-span-5 relative aspect-[4/5] lg:aspect-auto overflow-hidden rounded-xl border border-zic-line/5"
+        >
+          <img
+            src="assets/ipc-marine.jpg"
+            alt="Operación IPC marítima sobre gabarra grúa"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
+          >
+            <div
+              class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
+            >
+              02
+            </div>
+            <div class="font-semibold mt-1">Operación IPC sobre gabarra</div>
+          </figcaption>
+        </figure>
+        <figure
+          class="col-span-6 lg:col-span-4 relative aspect-square overflow-hidden rounded-xl border border-zic-line/5"
+        >
+          <img
+            src="assets/marine-1.jpg"
+            alt="Obras marítimas en el Lago de Maracaibo"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+          >
+            <div
+              class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
+            >
+              03
+            </div>
+            <div class="font-semibold mt-1 text-sm">Obras marítimas</div>
+          </figcaption>
+        </figure>
+        <figure
+          class="col-span-6 lg:col-span-4 relative aspect-square overflow-hidden rounded-xl border border-zic-line/5"
+        >
+          <img
+            src="assets/civil-2.jpg"
+            alt="Edificaciones habitacionales construidas por ZIC"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+          >
+            <div
+              class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
+            >
+              04
+            </div>
+            <div class="font-semibold mt-1 text-sm">Vivienda industrial</div>
+          </figcaption>
+        </figure>
+        <figure
+          class="col-span-12 lg:col-span-4 relative aspect-square overflow-hidden rounded-xl border border-zic-line/5"
+        >
+          <img
+            src="assets/earth-1.jpg"
+            alt="Movimientos de tierra y salinas"
+            class="w-full h-full object-cover"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+          >
+            <div
+              class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
+            >
+              05
+            </div>
+            <div class="font-semibold mt-1 text-sm">Movimientos de tierra</div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== CLIENTES ========== -->
+    <section
+      id="clientes"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >05 — Clientes</span
+          >
+        </div>
+        <div class="grid lg:grid-cols-12 gap-8 items-end mb-16">
+          <h2
+            class="lg:col-span-7 font-bold text-4xl lg:text-6xl leading-tight tracking-tight reveal"
+          >
+            Nos eligen las majors <br />de la industria global.
+          </h2>
+          <p class="lg:col-span-5 text-lg text-zic-muted reveal">
+            Más de 20 clientes nacionales e internacionales — con relaciones
+            comerciales que se sostienen por décadas.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
+        >
+          <!-- 30 wordmarks; respeta marcas reales mencionadas en brochure -->
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">PDVSA</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Shell</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Chevron</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Repsol</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">eni</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Schlumberger</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Halliburton</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Earth Tech</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Cardón IV</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Pequiven</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Petrozuata</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Polinter</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Hidrolago</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Lamar</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Statoil</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Lagoven</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Maraven</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Corpoven</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Supermetanol</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">YPergas</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Ducolsa</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Invoca</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Smart Resilin</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">CHEC</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">China CAMC</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Las Camelias</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight"
+              >Carbones del Guasare</span
+            >
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight"
+              >Productora de Sal</span
+            >
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">EHCOPEK</span>
+          </div>
+          <div
+            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+          >
+            <span class="font-mono text-sm tracking-tight">Gob. Zulia</span>
+          </div>
+        </div>
+
+        <p class="mt-8 text-sm text-zic-muted">
+          Incluye subsidiarias PDVSA: Gas, Petromonagas, Petroindependencia,
+          Petrozamora, Petroboscan, Petroregional del Lago, I&amp;C, Refinería
+          El Palito, Operaciones Acuáticas.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICACIONES ========== -->
+    <section
+      id="certificaciones"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >06 — Certificaciones &amp; alianzas</span
+          >
+        </div>
+        <h2
+          class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
+        >
+          Cumplimos las normas. <br /><span class="text-zic-muted"
+            >Y las superamos.</span
+          >
+        </h2>
+
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Calidad
+            </div>
+            <div class="mt-2 font-semibold text-xl">ISO 9001:2015</div>
+            <p class="mt-3 text-sm text-zic-muted">
+              10 años certificados por Bureau Veritas de Venezuela.
+            </p>
+          </div>
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Seguridad
+            </div>
+            <div class="mt-2 font-semibold text-xl">SIHO Excelente</div>
+            <p class="mt-3 text-sm text-zic-muted">
+              4 años evaluados con calificación excelente en SIHO y ambiente.
+            </p>
+          </div>
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M2 12h20M12 2c3 3 4 7 4 10s-1 7-4 10c-3-3-4-7-4-10s1-7 4-10z"
+              />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Internacional
+            </div>
+            <div class="mt-2 font-semibold text-xl">D-U-N-S Registered</div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Identificador Dun &amp; Bradstreet para procura internacional.
+            </p>
+          </div>
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Reconocimiento
+            </div>
+            <div class="mt-2 font-semibold text-xl">
+              Cámara Construcción Zulia
+            </div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Premio Anual de la Construcción 2007 — Mención honorífica.
+            </p>
+          </div>
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M3 12c2-3 6-5 9-5s7 2 9 5c-2 3-6 5-9 5s-7-2-9-5z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Alianza
+            </div>
+            <div class="mt-2 font-semibold text-xl">Boskalis Offshore</div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Alianza estratégica para proyectos marítimos especializados.
+            </p>
+          </div>
+          <div
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+          >
+            <svg
+              class="text-zic-green mb-6"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01" />
+            </svg>
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              Alianza
+            </div>
+            <div class="mt-2 font-semibold text-xl">Swagelining</div>
+            <p class="mt-3 text-sm text-zic-muted">
+              Tecnología internacional para revestimiento de tuberías.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 grid sm:grid-cols-3 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
+        >
+          <div class="bg-zic-deep p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green"
+            >
+              Soldadura
+            </div>
+            <div class="mt-2 font-bold text-3xl tabular-nums">
+              1<span class="text-zic-muted">%</span>
+            </div>
+            <div class="text-sm text-zic-muted">
+              Tasa de rechazo de soldadura desde 2016.
+            </div>
+          </div>
+          <div class="bg-zic-deep p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green"
+            >
+              SIHO
+            </div>
+            <div class="mt-2 font-bold text-3xl tabular-nums">4 años</div>
+            <div class="text-sm text-zic-muted">
+              Evaluación excelente continua.
+            </div>
+          </div>
+          <div class="bg-zic-deep p-6">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green"
+            >
+              ISO
+            </div>
+            <div class="mt-2 font-bold text-3xl tabular-nums">10 años</div>
+            <div class="text-sm text-zic-muted">
+              Certificados Bureau Veritas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LIDERAZGO / FOUNDER ========== -->
+    <section class="relative py-24 lg:py-32 border-t border-zic-line/5">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >07 — Liderazgo</span
+          >
+        </div>
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 reveal">
+            <div
+              class="aspect-[4/5] rounded-2xl overflow-hidden border border-zic-line/10 bg-zic-elev"
+            >
+              <img
+                src="assets/founder-team.jpg"
+                alt="Equipo ZIC en operaciones"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="lg:col-span-7 reveal">
+            <blockquote class="text-2xl lg:text-3xl leading-snug font-light">
+              <span class="text-zic-green text-5xl leading-none align-top mr-2"
+                >&ldquo;</span
+              >
+              Hace 60 años me comprometí a caminar con fe, amor y humildad.
+              Estos tres principios han sido los cimientos de esta empresa,
+              nuestro pueblo y nuestra ciudad.
+              <span
+                class="text-zic-green text-5xl leading-none align-bottom ml-2"
+                >&rdquo;</span
+              >
+            </blockquote>
+            <div class="mt-8 pt-8 border-t border-zic-line/10">
+              <div class="font-semibold text-lg">Carmelo Moschella</div>
+              <div class="text-sm text-zic-muted mt-1">
+                Fundador · Presidente · MC Industrias
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COBERTURA / LOCATIONS ========== -->
+    <section
+      class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span
+            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            >08 — Cobertura</span
+          >
+        </div>
+        <h2
+          class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
+        >
+          Cuatro sedes. <br /><span class="text-zic-muted"
+            >Cobertura nacional e internacional.</span
+          >
+        </h2>
+
+        <div
+          class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
+        >
+          <div class="bg-zic-deep p-7">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Sede principal
+            </div>
+            <div class="font-semibold text-lg">Maracaibo</div>
+            <div class="text-sm text-zic-muted mt-1">
+              Estado Zulia, Venezuela
+            </div>
+            <p class="mt-4 text-sm text-zic-muted leading-relaxed">
+              Calle 77 (Av. 5 de Julio), Esq. Av. 17, Edif. San Luis, Piso 3.
+            </p>
+          </div>
+          <div class="bg-zic-deep p-7">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Operaciones occidente
+            </div>
+            <div class="font-semibold text-lg">Ciudad Ojeda</div>
+            <div class="text-sm text-zic-muted mt-1">
+              Estado Zulia, Venezuela
+            </div>
+            <p class="mt-4 text-sm text-zic-muted leading-relaxed">
+              Carretera "N" entre 41 y 42. Patio de trabajo: 29.500 m².
+            </p>
+          </div>
+          <div class="bg-zic-deep p-7">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Operaciones oriente
+            </div>
+            <div class="font-semibold text-lg">Lecherías</div>
+            <div class="text-sm text-zic-muted mt-1">
+              Estado Anzoátegui, Venezuela
+            </div>
+            <p class="mt-4 text-sm text-zic-muted leading-relaxed">
+              Av. Américo Vespucio, Residencias Casa Blanca. Patio: 50.000 m².
+            </p>
+          </div>
+          <div class="bg-zic-deep p-7">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
+            >
+              Operaciones internacionales
+            </div>
+            <div class="font-semibold text-lg">Miami</div>
+            <div class="text-sm text-zic-muted mt-1">FL, Estados Unidos</div>
+            <p class="mt-4 text-sm text-zic-muted leading-relaxed">
+              11 NE 1 Av Suite 101, Miami, FL 33131.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section
+      id="contacto"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5"
+    >
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-6">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-px bg-zic-green"></div>
+              <span
+                class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+                >09 — Contacto</span
+              >
+            </div>
+            <h2
+              class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight"
+            >
+              ¿Tu próximo proyecto?
+            </h2>
+            <p class="mt-6 text-lg text-zic-muted max-w-lg">
+              Cotizamos obras civiles, mecánicas, eléctricas, IPC, tendido de
+              tuberías y obras marítimas en Venezuela y la región.
+            </p>
+
+            <div class="mt-12 space-y-6">
+              <a href="mailto:dsantoni@zic.com.ve" class="block group reveal">
+                <div
+                  class="font-mono text-xs uppercase tracking-widest text-zic-green"
+                >
+                  Comercial
+                </div>
+                <div
+                  class="mt-1 font-semibold text-xl group-hover:text-zic-green transition-colors"
+                >
+                  Daniel Santoni
+                </div>
+                <div class="text-sm text-zic-muted mt-1">
+                  dsantoni@zic.com.ve · +58 414 168 0944
+                </div>
+              </a>
+              <a href="mailto:fmoschella@zic.com.ve" class="block group reveal">
+                <div
+                  class="font-mono text-xs uppercase tracking-widest text-zic-green"
+                >
+                  Internacional
+                </div>
+                <div
+                  class="mt-1 font-semibold text-xl group-hover:text-zic-green transition-colors"
+                >
+                  Filippo Moschella
+                </div>
+                <div class="text-sm text-zic-muted mt-1">
+                  fmoschella@zic.com.ve · +1 786 266 1895
+                </div>
+              </a>
+              <a href="mailto:amoschella@zic.com.ve" class="block group reveal">
+                <div
+                  class="font-mono text-xs uppercase tracking-widest text-zic-green"
+                >
+                  Dirección
+                </div>
+                <div
+                  class="mt-1 font-semibold text-xl group-hover:text-zic-green transition-colors"
+                >
+                  Alexandro Moschella
+                </div>
+                <div class="text-sm text-zic-muted mt-1">
+                  amoschella@zic.com.ve · +58 414 631 8972
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <form
+              action="https://formsubmit.co/dsantoni@zic.com.ve"
+              method="POST"
+              class="rounded-2xl border border-zic-line/10 bg-zic-base p-8 lg:p-10"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nueva consulta desde zic.com.ve"
+              />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_template" value="table" />
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <label class="block">
+                  <span
+                    class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                    >Nombre *</span
+                  >
+                  <input
+                    required
+                    name="nombre"
+                    type="text"
+                    class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg placeholder:text-zic-muted focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors"
+                    placeholder="Nombre completo"
+                  />
+                </label>
+                <label class="block">
+                  <span
+                    class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                    >Empresa</span
+                  >
+                  <input
+                    name="empresa"
+                    type="text"
+                    class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg placeholder:text-zic-muted focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors"
+                    placeholder="Razón social"
+                  />
+                </label>
+                <label class="block">
+                  <span
+                    class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                    >Email *</span
+                  >
+                  <input
+                    required
+                    name="email"
+                    type="email"
+                    class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg placeholder:text-zic-muted focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors"
+                    placeholder="tu@empresa.com"
+                  />
+                </label>
+                <label class="block">
+                  <span
+                    class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                    >Teléfono</span
+                  >
+                  <input
+                    name="telefono"
+                    type="tel"
+                    class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg placeholder:text-zic-muted focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors"
+                    placeholder="+58 414 ..."
+                  />
+                </label>
+              </div>
+              <label class="block mt-5">
+                <span
+                  class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                  >Tipo de proyecto</span
+                >
+                <select
+                  name="tipo"
+                  class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors"
+                >
+                  <option>Tendido de tuberías</option>
+                  <option>Obras civiles</option>
+                  <option>Obras marítimas</option>
+                  <option>Movimientos de tierra</option>
+                  <option>IPC / Plantas</option>
+                  <option>Electricidad e instrumentación</option>
+                  <option>Mantenimiento de muelles</option>
+                  <option>Otro</option>
+                </select>
+              </label>
+              <label class="block mt-5">
+                <span
+                  class="font-mono text-xs uppercase tracking-widest text-zic-muted"
+                  >Detalle</span
+                >
+                <textarea
+                  required
+                  name="detalle"
+                  rows="5"
+                  class="mt-2 w-full rounded-lg bg-zic-deep border border-zic-line/10 px-4 py-3 text-zic-fg placeholder:text-zic-muted focus:outline-none focus:border-zic-green focus:ring-2 focus:ring-zic-green/30 transition-colors resize-none"
+                  placeholder="Describe brevemente alcance, ubicación y plazo estimado."
+                ></textarea>
+              </label>
+              <button
+                type="submit"
+                class="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-zic-green px-6 py-4 text-sm font-semibold text-white hover:bg-zic-green-deep transition-colors cursor-pointer"
+              >
+                Enviar consulta
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                >
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </button>
+              <p class="mt-4 text-xs text-zic-muted text-center">
+                Respondemos en un día hábil. También puedes escribirnos directo
+                a un contacto.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="border-t border-zic-line/5 bg-zic-deep">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+        <div class="grid md:grid-cols-12 gap-10">
+          <div class="md:col-span-5">
+            <a
+              href="#top"
+              class="zic-logo"
+              style="font-size: 18px"
+              aria-label="ZIC"
+            >
+              <svg
+                class="stripes"
+                viewBox="0 0 70 60"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <rect class="s1" x="2" y="4" width="58" height="9" rx="4.5" />
+                <rect class="s2" x="6" y="18" width="58" height="9" rx="4.5" />
+                <rect class="s3" x="10" y="32" width="58" height="9" rx="4.5" />
+                <rect class="s4" x="14" y="46" width="58" height="9" rx="4.5" />
+              </svg>
+              <span class="word">zic</span>
+            </a>
+            <p class="mt-5 text-sm text-zic-muted max-w-sm">
+              Zulia Industrial Constructions, C.A. Construcción industrial
+              pesada en Venezuela desde 1973. Parte del holding MC Industrias.
+            </p>
+            <p
+              class="mt-4 font-mono text-xs uppercase tracking-widest text-zic-muted"
+            >
+              RIF J-00354097-0
+            </p>
+          </div>
+          <div class="md:col-span-3">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green"
+            >
+              Navegación
+            </div>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>
+                <a
+                  href="#trayectoria"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Trayectoria</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicios"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#fortalezas"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Fortalezas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clientes"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Clientes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#certificaciones"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Certificaciones</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacto"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-4">
+            <div
+              class="font-mono text-xs uppercase tracking-widest text-zic-green"
+            >
+              Contacto directo
+            </div>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>
+                <a
+                  href="mailto:dsantoni@zic.com.ve"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >dsantoni@zic.com.ve</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:fmoschella@zic.com.ve"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >fmoschella@zic.com.ve</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:amoschella@zic.com.ve"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >amoschella@zic.com.ve</a
+                >
+              </li>
+              <li>
+                <a
+                  href="assets/brochure.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-zic-muted hover:text-zic-fg transition-colors"
+                  >Descargar brochure (PDF)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-12 pt-8 border-t border-zic-line/5 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-zic-muted"
+        >
+          <div>© 1973–2026 ZIC, C.A. — Todos los derechos reservados.</div>
+          <div class="font-mono uppercase tracking-widest">
+            Zulia · Anzoátegui · Miami
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script>
+      // Theme toggle (light/dark) — persists in localStorage, defaults to prefers-color-scheme
+      (function () {
+        const STORAGE_KEY = "zic-theme";
+        const root = document.documentElement;
+        const meta = document.querySelector('meta[name="theme-color"]');
+        const stored = localStorage.getItem(STORAGE_KEY);
+        const prefersLight =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+        const initial = stored || (prefersLight ? "light" : "dark");
+        const apply = (theme) => {
+          root.setAttribute("data-theme", theme);
+          if (meta)
+            meta.setAttribute(
+              "content",
+              theme === "light" ? "#FAFAF9" : "#0A0F0D",
+            );
+        };
+        apply(initial);
+        const btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.addEventListener("click", () => {
+            const current =
+              root.getAttribute("data-theme") === "light" ? "light" : "dark";
+            const next = current === "light" ? "dark" : "light";
+            apply(next);
+            localStorage.setItem(STORAGE_KEY, next);
+          });
+        }
+      })();
+
+      // Scroll reveal
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+      // Counter animation
+      const animateCounter = (el) => {
+        const target = parseFloat(el.getAttribute("data-counter"));
+        const decimals = parseInt(el.getAttribute("data-decimals") || "0", 10);
+        const duration = 1600;
+        const start = performance.now();
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - t, 3);
+          const value = target * eased;
+          el.textContent = decimals
+            ? value.toFixed(decimals).replace(".", ",")
+            : Math.round(value).toLocaleString("es-VE");
+          if (t < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      };
+      const cio = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              animateCounter(e.target);
+              cio.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.2 },
+      );
+      document
+        .querySelectorAll("[data-counter]")
+        .forEach((el) => cio.observe(el));
+    </script>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zulia Industrial Constructions, C.A.",
+        "alternateName": "ZIC",
+        "url": "https://zic.com.ve",
+        "logo": "https://zic.com.ve/assets/logo-zic.png",
+        "foundingDate": "1973",
+        "founder": { "@type": "Person", "name": "Carmelo Moschella" },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "MC Industrias"
+        },
+        "description": "Empresa venezolana de construcción industrial pesada para los sectores petrolero, gas, petroquímico, minero y carbonífero.",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle 77 (Av. 5 de Julio), Esq. Av. 17, Edif. San Luis, Piso 3",
+            "addressLocality": "Maracaibo",
+            "addressRegion": "Zulia",
+            "addressCountry": "VE"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Carretera N entre 41 y 42",
+            "addressLocality": "Ciudad Ojeda",
+            "addressRegion": "Zulia",
+            "addressCountry": "VE"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Américo Vespucio, Residencias Casa Blanca",
+            "addressLocality": "Lecherías",
+            "addressRegion": "Anzoátegui",
+            "addressCountry": "VE"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "11 NE 1 Av Suite 101",
+            "addressLocality": "Miami",
+            "addressRegion": "FL",
+            "postalCode": "33131",
+            "addressCountry": "US"
+          }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "name": "Daniel Santoni",
+            "email": "dsantoni@zic.com.ve",
+            "telephone": "+58-414-168-0944"
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "international",
+            "name": "Filippo Moschella",
+            "email": "fmoschella@zic.com.ve",
+            "telephone": "+1-786-266-1895"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

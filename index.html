@@ -160,6 +160,21 @@
         opacity: 1;
         transform: none;
       }
+      .hero-bg-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
+        background: #000;
+      }
+      @media (max-width: 768px) {
+        .hero-bg-video {
+          object-fit: contain;
+        }
+      }
       .hero-image {
         background-image:
           linear-gradient(
@@ -418,15 +433,7 @@
     >
       <!-- Video background -->
       <video
-        style="
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          z-index: 0;
-        "
+        class="hero-bg-video"
         autoplay
         muted
         loop
@@ -1707,37 +1714,37 @@
               <img
                 src="assets/carmelo-1.jpeg"
                 alt="Carmelo Moschella"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-100 transition-opacity duration-700"
                 loading="lazy"
               />
               <img
                 src="assets/carmelo-2.jpeg"
                 alt="Carmelo Moschella en obra"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-0 transition-opacity duration-700"
                 loading="lazy"
               />
               <img
                 src="assets/carmelo-3.jpeg"
                 alt="Carmelo Moschella histórico"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-0 transition-opacity duration-700"
                 loading="lazy"
               />
               <img
                 src="assets/carmelo-4.jpeg"
                 alt="Carmelo Moschella familia"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-0 transition-opacity duration-700"
                 loading="lazy"
               />
               <img
                 src="assets/carmelo-5.jpeg"
                 alt="Carmelo Moschella casco"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-0 transition-opacity duration-700"
                 loading="lazy"
               />
               <img
                 src="assets/carmelo-6.jpeg"
                 alt="Carmelo Moschella visita"
-                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                class="carmelo-slide absolute inset-0 w-full h-full object-contain bg-zic-elev opacity-0 transition-opacity duration-700"
                 loading="lazy"
               />
               <div

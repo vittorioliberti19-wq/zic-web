@@ -171,15 +171,28 @@
         background: #000;
       }
       @media (max-width: 768px) {
-        .hero-bg-video {
-          object-fit: cover;
-        }
         #top {
           min-height: auto !important;
+          overflow: visible !important;
+          display: flex;
+          flex-direction: column;
+        }
+        .hero-bg-video {
+          position: relative !important;
+          inset: auto !important;
+          width: 100%;
+          height: auto;
           aspect-ratio: 16 / 9;
+          object-fit: cover;
+          z-index: 0;
+        }
+        #top > div[class*="absolute inset-0"] {
+          display: none !important;
         }
         .hero-stats-wrap {
+          position: relative !important;
           background: rgb(var(--zic-base));
+          padding-top: 0;
         }
       }
       .hero-image {

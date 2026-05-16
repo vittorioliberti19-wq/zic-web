@@ -296,50 +296,44 @@
         font-size: 1.45em;
         line-height: 0.85;
       }
-      /* Light theme: invert video overlays to light tones for readable text */
-      [data-theme="light"] #contacto > div[style*="linear-gradient"],
-      [data-theme="light"] #servicios > div[style*="linear-gradient"],
-      [data-theme="light"] #fortalezas > div[style*="linear-gradient"],
-      [data-theme="light"] #certificaciones > div[style*="linear-gradient"],
-      [data-theme="light"]
-        .mobile-stats-section
-        > div[style*="linear-gradient"] {
-        background: linear-gradient(
-          180deg,
-          rgba(250, 250, 249, 0.86) 0%,
-          rgba(250, 250, 249, 0.93) 100%
-        ) !important;
+      /* Sections with video/dark bg: force white text in BOTH themes */
+      #trayectoria,
+      #servicios,
+      #fortalezas,
+      #certificaciones,
+      #contacto,
+      .mobile-stats-section {
+        color: #f1f5f2;
       }
-
-      /* Trayectoria: light theme uses light overlay over bg image */
-      [data-theme="light"] .trayectoria-section {
-        background-image:
-          linear-gradient(
-            180deg,
-            rgba(250, 250, 249, 0.88) 0%,
-            rgba(250, 250, 249, 0.94) 100%
-          ),
-          url("assets/hero-aerial.jpg") !important;
+      [data-theme="light"] #trayectoria *,
+      [data-theme="light"] #servicios *,
+      [data-theme="light"] #fortalezas *,
+      [data-theme="light"] #certificaciones *,
+      [data-theme="light"] #contacto *,
+      [data-theme="light"] .mobile-stats-section * {
+        color: inherit;
       }
-
-      /* Light theme card opacity fix — readable text over video backgrounds */
-      [data-theme="light"] .bg-zic-deep\/35 {
-        background-color: rgb(var(--zic-deep) / 0.88) !important;
+      [data-theme="light"] #trayectoria,
+      [data-theme="light"] #servicios,
+      [data-theme="light"] #fortalezas,
+      [data-theme="light"] #certificaciones,
+      [data-theme="light"] #contacto,
+      [data-theme="light"] .mobile-stats-section {
+        color: #f1f5f2 !important;
       }
-      [data-theme="light"] .bg-zic-deep\/45 {
-        background-color: rgb(var(--zic-deep) / 0.92) !important;
+      [data-theme="light"] #trayectoria .text-zic-green,
+      [data-theme="light"] #servicios .text-zic-green,
+      [data-theme="light"] #fortalezas .text-zic-green,
+      [data-theme="light"] #certificaciones .text-zic-green,
+      [data-theme="light"] #contacto .text-zic-green,
+      [data-theme="light"] .mobile-stats-section .text-zic-green {
+        color: rgb(var(--zic-green)) !important;
       }
-      [data-theme="light"] .bg-zic-deep\/55 {
-        background-color: rgb(var(--zic-deep) / 0.92) !important;
-      }
-      [data-theme="light"] .bg-zic-deep\/60 {
-        background-color: rgb(var(--zic-deep) / 0.92) !important;
-      }
-      [data-theme="light"] .bg-zic-deep\/70 {
-        background-color: rgb(var(--zic-deep) / 0.94) !important;
-      }
-      [data-theme="light"] .bg-zic-base\/55 {
-        background-color: rgb(var(--zic-base) / 0.94) !important;
+      /* Mosaic captions over images — white with shadow */
+      .mosaic-caption {
+        color: #ffffff !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+        font-weight: 700;
       }
 
       /* Logo swap per theme */
@@ -1453,7 +1447,7 @@
             loading="lazy"
           />
           <figcaption
-            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
+            class="mosaic-caption absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
           >
             <div
               class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
@@ -1475,7 +1469,7 @@
             loading="lazy"
           />
           <figcaption
-            class="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
+            class="mosaic-caption absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 to-transparent"
           >
             <div
               class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
@@ -1495,7 +1489,7 @@
             loading="lazy"
           />
           <figcaption
-            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+            class="mosaic-caption absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
           >
             <div
               class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
@@ -1515,7 +1509,7 @@
             loading="lazy"
           />
           <figcaption
-            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+            class="mosaic-caption absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
           >
             <div
               class="font-mono text-[10px] tracking-widest uppercase text-zic-green"
@@ -1535,7 +1529,7 @@
             loading="lazy"
           />
           <figcaption
-            class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
+            class="mosaic-caption absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent"
           >
             <div
               class="font-mono text-[10px] tracking-widest uppercase text-zic-green"

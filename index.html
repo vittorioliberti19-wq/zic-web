@@ -172,7 +172,14 @@
       }
       @media (max-width: 768px) {
         .hero-bg-video {
-          object-fit: contain;
+          object-fit: cover;
+        }
+        #top {
+          min-height: auto !important;
+          aspect-ratio: 16 / 9;
+        }
+        .hero-stats-wrap {
+          background: rgb(var(--zic-base));
         }
       }
       .hero-image {
@@ -459,7 +466,10 @@
       ></div>
 
       <!-- Stats strip bottom -->
-      <div class="absolute bottom-0 left-0 right-0" style="z-index: 2">
+      <div
+        class="hero-stats-wrap md:absolute md:bottom-0 md:left-0 md:right-0 relative"
+        style="z-index: 2"
+      >
         <div class="max-w-7xl mx-auto px-5 lg:px-8 pb-10">
           <div
             class="grid grid-cols-2 md:grid-cols-4 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden backdrop-blur-sm"

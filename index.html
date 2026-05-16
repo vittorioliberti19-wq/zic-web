@@ -1651,9 +1651,40 @@
     <!-- ========== CERTIFICACIONES ========== -->
     <section
       id="certificaciones"
-      class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base"
+      class="relative py-24 lg:py-32 border-t border-zic-line/5 overflow-hidden"
+      style="background: rgb(var(--zic-base))"
     >
-      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        style="
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          z-index: 0;
+        "
+      >
+        <source src="assets/certificaciones-video.mp4" type="video/mp4" />
+      </video>
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+          background: linear-gradient(
+            180deg,
+            rgba(10, 15, 13, 0.75) 0%,
+            rgba(10, 15, 13, 0.88) 100%
+          );
+        "
+      ></div>
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 relative" style="z-index: 2">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
@@ -1671,7 +1702,7 @@
 
         <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1695,7 +1726,7 @@
             </p>
           </div>
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1720,7 +1751,7 @@
             </p>
           </div>
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1747,7 +1778,7 @@
             </p>
           </div>
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1773,7 +1804,7 @@
             </p>
           </div>
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1798,7 +1829,7 @@
             </p>
           </div>
           <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep p-8 reveal"
+            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
           >
             <svg
               class="text-zic-green mb-6"
@@ -1826,7 +1857,7 @@
         <div
           class="mt-12 grid sm:grid-cols-3 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
         >
-          <div class="bg-zic-deep p-6">
+          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
             <div
               class="font-mono text-xs uppercase tracking-widest text-zic-green"
             >
@@ -1839,7 +1870,7 @@
               Tasa de rechazo de soldadura desde 2016.
             </div>
           </div>
-          <div class="bg-zic-deep p-6">
+          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
             <div
               class="font-mono text-xs uppercase tracking-widest text-zic-green"
             >
@@ -1850,7 +1881,7 @@
               Evaluación excelente continua.
             </div>
           </div>
-          <div class="bg-zic-deep p-6">
+          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
             <div
               class="font-mono text-xs uppercase tracking-widest text-zic-green"
             >

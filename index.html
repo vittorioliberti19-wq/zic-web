@@ -296,6 +296,32 @@
         font-size: 1.45em;
         line-height: 0.85;
       }
+      /* Light theme: invert video overlays to light tones for readable text */
+      [data-theme="light"] #contacto > div[style*="linear-gradient"],
+      [data-theme="light"] #servicios > div[style*="linear-gradient"],
+      [data-theme="light"] #fortalezas > div[style*="linear-gradient"],
+      [data-theme="light"] #certificaciones > div[style*="linear-gradient"],
+      [data-theme="light"]
+        .mobile-stats-section
+        > div[style*="linear-gradient"] {
+        background: linear-gradient(
+          180deg,
+          rgba(250, 250, 249, 0.86) 0%,
+          rgba(250, 250, 249, 0.93) 100%
+        ) !important;
+      }
+
+      /* Trayectoria: light theme uses light overlay over bg image */
+      [data-theme="light"] .trayectoria-section {
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(250, 250, 249, 0.88) 0%,
+            rgba(250, 250, 249, 0.94) 100%
+          ),
+          url("assets/hero-aerial.jpg") !important;
+      }
+
       /* Light theme card opacity fix — readable text over video backgrounds */
       [data-theme="light"] .bg-zic-deep\/35 {
         background-color: rgb(var(--zic-deep) / 0.88) !important;
@@ -702,7 +728,7 @@
     <!-- ========== TRAYECTORIA / TIMELINE ========== -->
     <section
       id="trayectoria"
-      class="relative py-24 lg:py-32 border-t border-zic-line/5 overflow-hidden"
+      class="trayectoria-section relative py-24 lg:py-32 border-t border-zic-line/5 overflow-hidden"
       style="
         background-image:
           linear-gradient(

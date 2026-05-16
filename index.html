@@ -1697,14 +1697,74 @@
         <div class="grid lg:grid-cols-12 gap-12 items-center">
           <div class="lg:col-span-5 reveal">
             <div
-              class="aspect-[4/5] rounded-2xl overflow-hidden border border-zic-line/10 bg-zic-elev"
+              id="carmelo-slider"
+              class="aspect-[4/5] rounded-2xl overflow-hidden border border-zic-line/10 bg-zic-elev relative"
             >
               <img
-                src="assets/founder-team.jpg"
-                alt="Equipo ZIC en operaciones"
-                class="w-full h-full object-cover"
+                src="assets/carmelo-1.jpeg"
+                alt="Carmelo Moschella"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700"
                 loading="lazy"
               />
+              <img
+                src="assets/carmelo-2.jpeg"
+                alt="Carmelo Moschella en obra"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                loading="lazy"
+              />
+              <img
+                src="assets/carmelo-3.jpeg"
+                alt="Carmelo Moschella histórico"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                loading="lazy"
+              />
+              <img
+                src="assets/carmelo-4.jpeg"
+                alt="Carmelo Moschella familia"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                loading="lazy"
+              />
+              <img
+                src="assets/carmelo-5.jpeg"
+                alt="Carmelo Moschella casco"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                loading="lazy"
+              />
+              <img
+                src="assets/carmelo-6.jpeg"
+                alt="Carmelo Moschella visita"
+                class="carmelo-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
+                loading="lazy"
+              />
+              <div
+                class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10"
+                id="carmelo-dots"
+              >
+                <button
+                  class="w-2 h-2 rounded-full bg-white transition-all"
+                  data-idx="0"
+                ></button>
+                <button
+                  class="w-2 h-2 rounded-full bg-white/40 transition-all"
+                  data-idx="1"
+                ></button>
+                <button
+                  class="w-2 h-2 rounded-full bg-white/40 transition-all"
+                  data-idx="2"
+                ></button>
+                <button
+                  class="w-2 h-2 rounded-full bg-white/40 transition-all"
+                  data-idx="3"
+                ></button>
+                <button
+                  class="w-2 h-2 rounded-full bg-white/40 transition-all"
+                  data-idx="4"
+                ></button>
+                <button
+                  class="w-2 h-2 rounded-full bg-white/40 transition-all"
+                  data-idx="5"
+                ></button>
+              </div>
             </div>
           </div>
           <div class="lg:col-span-7 reveal">
@@ -2239,6 +2299,30 @@
       document
         .querySelectorAll("[data-counter]")
         .forEach((el) => cio.observe(el));
+
+      // Carmelo slider
+      (function () {
+        const slides = document.querySelectorAll(
+          "#carmelo-slider .carmelo-slide",
+        );
+        const dots = document.querySelectorAll("#carmelo-dots button");
+        if (!slides.length) return;
+        let idx = 0;
+        function show(i) {
+          slides.forEach((s, n) => {
+            s.style.opacity = n === i ? "1" : "0";
+          });
+          dots.forEach((d, n) => {
+            d.classList.toggle("bg-white", n === i);
+            d.classList.toggle("bg-white/40", n !== i);
+          });
+          idx = i;
+        }
+        dots.forEach((d) =>
+          d.addEventListener("click", () => show(parseInt(d.dataset.idx))),
+        );
+        setInterval(() => show((idx + 1) % slides.length), 4000);
+      })();
     </script>
 
     <!-- JSON-LD -->

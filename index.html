@@ -172,16 +172,29 @@
       }
       @media (max-width: 768px) {
         #top {
-          min-height: 55svh !important;
+          min-height: auto !important;
           overflow: visible !important;
+          display: flex !important;
+          flex-direction: column !important;
+        }
+        .hero-bg-video {
+          position: relative !important;
+          inset: auto !important;
+          width: 100% !important;
+          height: auto !important;
+          aspect-ratio: 16 / 10;
+          object-fit: cover;
+        }
+        .hero-overlay {
+          display: none !important;
         }
         .hero-stats-wrap {
-          position: static !important;
+          position: relative !important;
+          bottom: auto !important;
           background: rgb(var(--zic-base));
-          margin-top: 0;
         }
         .hero-stats-wrap .stat-cell {
-          padding: 0.75rem 0.85rem !important;
+          padding: 0.85rem !important;
         }
         .hero-stats-wrap .stat-value {
           font-size: 1.5rem !important;
@@ -190,7 +203,7 @@
           font-size: 0.7rem !important;
         }
         .hero-stats-wrap .stat-sub {
-          font-size: 0.7rem !important;
+          font-size: 0.72rem !important;
         }
       }
       .hero-image {
@@ -463,6 +476,7 @@
       </video>
       <!-- Overlay -->
       <div
+        class="hero-overlay"
         style="
           position: absolute;
           inset: 0;

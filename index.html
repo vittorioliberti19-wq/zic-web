@@ -245,16 +245,27 @@
         background-color: rgba(22, 163, 74, 0.05);
       }
       .logo-tile {
-        color: rgb(var(--zic-muted));
+        background: #ffffff;
         transition:
-          color 0.2s ease,
           border-color 0.2s ease,
           background-color 0.2s ease;
       }
+      .logo-tile img {
+        max-height: 48px;
+        max-width: 100%;
+        object-fit: contain;
+        filter: grayscale(1) contrast(1.05);
+        opacity: 0.88;
+        transition:
+          filter 0.25s ease,
+          opacity 0.25s ease;
+      }
       .logo-tile:hover {
-        color: rgb(var(--zic-fg));
         border-color: rgba(22, 163, 74, 0.4);
-        background-color: rgba(22, 163, 74, 0.04);
+      }
+      .logo-tile:hover img {
+        filter: grayscale(0);
+        opacity: 1;
       }
       details summary::-webkit-details-marker {
         display: none;
@@ -1585,160 +1596,276 @@
         <div
           class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
         >
-          <!-- 30 wordmarks; respeta marcas reales mencionadas en brochure -->
+          <!-- 30 logos de clientes reales (brochure ZIC) -->
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">PDVSA</span>
+            <img
+              src="assets/clientes/pdvsa.webp"
+              alt="PDVSA — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Shell</span>
+            <img
+              src="assets/clientes/shell.webp"
+              alt="Shell — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Chevron</span>
+            <img
+              src="assets/clientes/chevron.webp"
+              alt="Chevron — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Repsol</span>
+            <img
+              src="assets/clientes/repsol.webp"
+              alt="Repsol — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">eni</span>
+            <img
+              src="assets/clientes/eni.webp"
+              alt="eni — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Schlumberger</span>
+            <img
+              src="assets/clientes/slb.webp"
+              alt="Schlumberger — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Halliburton</span>
+            <img
+              src="assets/clientes/halliburton.webp"
+              alt="Halliburton — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Earth Tech</span>
+            <img
+              src="assets/clientes/earth-tech.webp"
+              alt="Earth Tech — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Cardón IV</span>
+            <img
+              src="assets/clientes/cardon-iv.webp"
+              alt="Cardón IV — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Pequiven</span>
+            <img
+              src="assets/clientes/pequiven.webp"
+              alt="Pequiven — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Petrozuata</span>
+            <img
+              src="assets/clientes/petrozuata.webp"
+              alt="Petrozuata — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Polinter</span>
+            <img
+              src="assets/clientes/polinter.webp"
+              alt="Polinter — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Hidrolago</span>
+            <img
+              src="assets/clientes/hidrolago.webp"
+              alt="Hidrolago — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Lamar</span>
+            <img
+              src="assets/clientes/lamar.webp"
+              alt="Lamar — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Statoil</span>
+            <img
+              src="assets/clientes/statoil.webp"
+              alt="Statoil — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Lagoven</span>
+            <img
+              src="assets/clientes/lagoven.webp"
+              alt="Lagoven — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Maraven</span>
+            <img
+              src="assets/clientes/maraven.webp"
+              alt="Maraven — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Corpoven</span>
+            <img
+              src="assets/clientes/corpoven.webp"
+              alt="Corpoven — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Supermetanol</span>
+            <img
+              src="assets/clientes/supermetanol.webp"
+              alt="Supermetanol — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">YPergas</span>
+            <img
+              src="assets/clientes/ypergas.webp"
+              alt="YPergas — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Ducolsa</span>
+            <img
+              src="assets/clientes/ducolsa.webp"
+              alt="Ducolsa — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Invoca</span>
+            <img
+              src="assets/clientes/invoca.webp"
+              alt="Invoca — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Smart Resilin</span>
+            <img
+              src="assets/clientes/smart-resilin.webp"
+              alt="Smart Resilin — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">CHEC</span>
+            <img
+              src="assets/clientes/chec.webp"
+              alt="CHEC — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">China CAMC</span>
+            <img
+              src="assets/clientes/china-camc.webp"
+              alt="China CAMC — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Las Camelias</span>
+            <img
+              src="assets/clientes/las-camelias.webp"
+              alt="Las Camelias — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight"
-              >Carbones del Guasare</span
-            >
+            <img
+              src="assets/clientes/carbones-del-guasare.webp"
+              alt="Carbones del Guasare — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight"
-              >Productora de Sal</span
-            >
+            <img
+              src="assets/clientes/produsal.png"
+              alt="Productora de Sal — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">EHCOPEK</span>
+            <img
+              src="assets/clientes/ehk.webp"
+              alt="EHK (Ehcopek) — cliente ZIC"
+              loading="lazy"
+            />
           </div>
           <div
-            class="logo-tile bg-zic-deep border border-transparent flex items-center justify-center h-24 px-4"
+            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
           >
-            <span class="font-mono text-sm tracking-tight">Gob. Zulia</span>
+            <img
+              src="assets/clientes/gob-zulia.webp"
+              alt="Gobernación del Zulia — cliente ZIC"
+              loading="lazy"
+            />
           </div>
         </div>
 

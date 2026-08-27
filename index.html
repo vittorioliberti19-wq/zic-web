@@ -118,10 +118,10 @@
         --zic-line: 255 255 255;
         --grain-dot: rgba(255, 255, 255, 0.04);
         --hero-overlay-top: rgba(10, 15, 13, 0.55);
-        --hero-overlay-mid: rgba(10, 15, 13, 0.85);
+        --hero-overlay-mid: rgba(10, 15, 13, 0.73);
         --hero-overlay-end: #0a0f0d;
         --image-overlay-top: rgba(10, 15, 13, 0.45);
-        --image-overlay-bot: rgba(10, 15, 13, 0.85);
+        --image-overlay-bot: rgba(10, 15, 13, 0.73);
         --logo-green-1: #1d8c3a;
         --logo-green-2: #0c5e2a;
         --logo-gray: #b8b8b8;
@@ -251,11 +251,11 @@
           background-color 0.2s ease;
       }
       .logo-tile img {
-        max-height: 48px;
+        max-height: 64px;
         max-width: 100%;
         object-fit: contain;
-        filter: grayscale(1) contrast(1.05);
-        opacity: 0.88;
+        filter: none;
+        opacity: 1;
         transition:
           filter 0.25s ease,
           opacity 0.25s ease;
@@ -564,7 +564,7 @@
             180deg,
             rgba(10, 15, 13, 0) 0%,
             rgba(10, 15, 13, 0.05) 50%,
-            rgba(10, 15, 13, 0.65) 100%
+            rgba(10, 15, 13, 0.55) 100%
           );
         "
       ></div>
@@ -676,8 +676,8 @@
           z-index: 1;
           background: linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.7) 0%,
-            rgba(10, 15, 13, 0.85) 100%
+            rgba(10, 15, 13, 0.58) 0%,
+            rgba(10, 15, 13, 0.73) 100%
           );
         "
       ></div>
@@ -753,8 +753,8 @@
         background-image:
           linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.82) 0%,
-            rgba(10, 15, 13, 0.92) 100%
+            rgba(10, 15, 13, 0.7) 0%,
+            rgba(10, 15, 13, 0.8) 100%
           ),
           url(&quot;assets/hero-aerial.jpg&quot;);
         background-size: cover;
@@ -850,7 +850,8 @@
                 Bureau Veritas
               </div>
               <p class="mt-2 text-base text-zic-fg/80 leading-relaxed">
-                Diez años certificados bajo la norma ISO 9001; +7 proyectos IPC.
+                Certificados bajo la norma ISO 9001 con Bureau Veritas; +7 proyectos
+                IPC.
               </p>
             </div>
             <div class="reveal">
@@ -864,7 +865,7 @@
               </div>
               <div class="mt-2 font-bold text-lg text-zic-fg">+50 años</div>
               <p class="mt-2 text-base text-zic-fg/80 leading-relaxed">
-                +450 obras ejecutadas. Operaciones en Zulia, Anzoátegui y Miami.
+                +450 obras ejecutadas. Operaciones en Zulia, Anzoátegui y Florida.
               </p>
             </div>
           </div>
@@ -903,8 +904,8 @@
           z-index: 1;
           background: linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.78) 0%,
-            rgba(10, 15, 13, 0.88) 100%
+            rgba(10, 15, 13, 0.66) 0%,
+            rgba(10, 15, 13, 0.76) 100%
           );
         "
       ></div>
@@ -959,7 +960,7 @@
             <h3 class="font-semibold text-lg leading-snug">
               Tendido de gasoductos y oleoductos
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Líneas de tuberías en general y ductos de acero al carbono bajo
               norma API 5L. +1.000 km ejecutados en gasoductos, oleoductos y
               acueductos.
@@ -990,7 +991,7 @@
             <h3 class="font-semibold text-lg leading-snug">
               Instalaciones petroleras y petroquímicas
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Estaciones de válvulas, plantas compresoras, estaciones de flujo,
               eléctricas y petroquímicas.
             </p>
@@ -1016,7 +1017,7 @@
               <span class="font-mono text-xs text-zic-muted">03</span>
             </div>
             <h3 class="font-semibold text-lg leading-snug">Obras civiles</h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Edificaciones habitacionales, industriales, fundaciones de
               concreto armado, canalizaciones, represas, diques de contención.
             </p>
@@ -1044,7 +1045,7 @@
               <span class="font-mono text-xs text-zic-muted">04</span>
             </div>
             <h3 class="font-semibold text-lg leading-snug">Obras marítimas</h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Diques, muelles, dársenas, tendidos submarinos, astilleros
               navales e infraestructuras terrestres portuarias.
             </p>
@@ -1072,7 +1073,7 @@
             <h3 class="font-semibold text-lg leading-snug">
               Movimientos de tierra
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Drenajes, urbanismos, terraplenes, muros de contención, proyectos
               mineros y cosecha de sal en salinas.
             </p>
@@ -1100,7 +1101,7 @@
             <h3 class="font-semibold text-lg leading-snug">
               Electricidad e instrumentación
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Estaciones eléctricas, sistemas de distribución y plantas
               termoeléctricas, asociadas a las instalaciones y plantas
               construidas por la organización.
@@ -1130,7 +1131,7 @@
             <h3 class="font-semibold text-lg leading-snug">
               Ingeniería, Procura y Construcción (IPC)
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Proyectos multidisciplinarios para la industria petrolera,
               petroquímica y privada. Procura nacional e internacional.
             </p>
@@ -1160,9 +1161,10 @@
             <h3 class="font-semibold text-lg leading-snug">
               Construcción y mantenimiento de muelles
             </h3>
-            <p class="mt-3 text-sm text-zic-muted leading-relaxed">
+            <p class="mt-3 text-base text-zic-muted leading-relaxed">
               Cambios de brazos de carga, componentes estructurales,
-              geotécnicos, hidrodinámicos y patológicos.
+              geotécnicos, hidrodinámicos y de patología estructural (evaluación
+              del deterioro de la estructura).
             </p>
           </div>
         </div>
@@ -1292,9 +1294,9 @@
           z-index: 1;
           background: linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.75) 0%,
-            rgba(10, 15, 13, 0.85) 60%,
-            rgba(10, 15, 13, 0.92) 100%
+            rgba(10, 15, 13, 0.63) 0%,
+            rgba(10, 15, 13, 0.73) 60%,
+            rgba(10, 15, 13, 0.8) 100%
           );
         "
       ></div>
@@ -1325,7 +1327,7 @@
               +<span data-counter="2">0</span
               ><span class="text-zic-muted text-3xl">M h-h</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Manejo de proyectos con más de 2 millones de Horas Hombre sin
               accidentes.
             </p>
@@ -1340,7 +1342,7 @@
               +<span data-counter="1000">0</span
               ><span class="text-zic-muted text-3xl">km</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Tendido en gasoductos, oleoductos y acueductos.
             </p>
           </div>
@@ -1353,7 +1355,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="20">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Proyectos de plantas y proyectos en refinerías.
             </p>
           </div>
@@ -1366,7 +1368,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="7">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Proyectos de Ingeniería, Procura y Construcción con las
               principales firmas de Venezuela.
             </p>
@@ -1380,7 +1382,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="100">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Proyectos con capacidad superior a 1MM m³ por proyecto.
             </p>
           </div>
@@ -1394,7 +1396,7 @@
               +<span data-counter="400">0</span
               ><span class="text-zic-muted text-3xl">ton</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               9 módulos, 2 de compresión y 7 de Estación de Flujo con grúa.
             </p>
           </div>
@@ -1407,7 +1409,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="150">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Equipos pesados de construcción con alta eficiencia operativa.
             </p>
           </div>
@@ -1420,7 +1422,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="200">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Con más de 20 años de relación comercial con ZIC.
             </p>
           </div>
@@ -1433,7 +1435,7 @@
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="20">0</span>
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Internacionales y nacionales con altos estándares de calidad.
             </p>
           </div>
@@ -1456,7 +1458,7 @@
         <h2
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
-          Obra ejecutada. <br /><span class="text-zic-muted">No promesas.</span>
+          Obras ejecutadas. <br /><span class="text-zic-muted">No promesas.</span>
         </h2>
       </div>
 
@@ -1598,7 +1600,7 @@
         >
           <!-- 30 logos de clientes reales (brochure ZIC) -->
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/pdvsa.webp"
@@ -1607,7 +1609,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/shell.webp"
@@ -1616,7 +1618,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/chevron.webp"
@@ -1625,7 +1627,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/repsol.webp"
@@ -1634,7 +1636,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/eni.webp"
@@ -1643,7 +1645,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/slb.webp"
@@ -1652,7 +1654,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/halliburton.webp"
@@ -1661,7 +1663,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/earth-tech.webp"
@@ -1670,7 +1672,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/cardon-iv.webp"
@@ -1679,7 +1681,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/pequiven.webp"
@@ -1688,7 +1690,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/petrozuata.webp"
@@ -1697,7 +1699,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/polinter.webp"
@@ -1706,7 +1708,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/hidrolago.webp"
@@ -1715,7 +1717,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/lamar.webp"
@@ -1724,7 +1726,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/statoil.webp"
@@ -1733,25 +1735,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
-          >
-            <img
-              src="assets/clientes/lagoven.webp"
-              alt="Lagoven — cliente ZIC"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
-          >
-            <img
-              src="assets/clientes/maraven.webp"
-              alt="Maraven — cliente ZIC"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/corpoven.webp"
@@ -1760,7 +1744,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/supermetanol.webp"
@@ -1769,7 +1753,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/ypergas.webp"
@@ -1778,7 +1762,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/ducolsa.webp"
@@ -1787,7 +1771,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/invoca.webp"
@@ -1796,7 +1780,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/smart-resilin.webp"
@@ -1805,7 +1789,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/chec.webp"
@@ -1814,7 +1798,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/china-camc.webp"
@@ -1823,7 +1807,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/las-camelias.webp"
@@ -1832,7 +1816,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/carbones-del-guasare.webp"
@@ -1841,7 +1825,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/produsal.png"
@@ -1850,7 +1834,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/ehk.webp"
@@ -1859,7 +1843,7 @@
             />
           </div>
           <div
-            class="logo-tile border border-transparent flex items-center justify-center h-24 px-5"
+            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
             <img
               src="assets/clientes/gob-zulia.webp"
@@ -1908,8 +1892,8 @@
           z-index: 1;
           background: linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.75) 0%,
-            rgba(10, 15, 13, 0.88) 100%
+            rgba(10, 15, 13, 0.63) 0%,
+            rgba(10, 15, 13, 0.76) 100%
           );
         "
       ></div>
@@ -1950,8 +1934,9 @@
               Calidad
             </div>
             <div class="mt-2 font-semibold text-xl">ISO 9001:2015</div>
-            <p class="mt-3 text-sm text-zic-muted">
-              10 años certificados por Bureau Veritas de Venezuela.
+            <p class="mt-3 text-base text-zic-muted">
+              Certificados por Bureau Veritas de Venezuela. En proceso hacia la
+              renovación.
             </p>
           </div>
           <div
@@ -1975,7 +1960,7 @@
               Seguridad
             </div>
             <div class="mt-2 font-semibold text-xl">SIHO Excelente</div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               4 años evaluados con calificación excelente en SIHO y ambiente.
             </p>
           </div>
@@ -2001,57 +1986,8 @@
             <div class="mt-2 font-semibold text-xl">
               Cámara de la Construcción
             </div>
-            <p class="mt-3 text-sm text-zic-muted">
+            <p class="mt-3 text-base text-zic-muted">
               Reconocimiento de la Cámara de la Construcción.
-            </p>
-          </div>
-          <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
-          >
-            <svg
-              class="text-zic-green mb-6"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path d="M3 12c2-3 6-5 9-5s7 2 9 5c-2 3-6 5-9 5s-7-2-9-5z" />
-              <circle cx="12" cy="12" r="2" />
-            </svg>
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
-            >
-              Alianza
-            </div>
-            <div class="mt-2 font-semibold text-xl">Boskalis</div>
-            <p class="mt-3 text-sm text-zic-muted">
-              Alianza estratégica para proyectos marítimos especializados.
-            </p>
-          </div>
-          <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
-          >
-            <svg
-              class="text-zic-green mb-6"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path d="M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01" />
-            </svg>
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
-            >
-              Alianza
-            </div>
-            <div class="mt-2 font-semibold text-xl">Swagelining</div>
-            <p class="mt-3 text-sm text-zic-muted">
-              Tecnología internacional para revestimiento de tuberías.
             </p>
           </div>
         </div>
@@ -2068,7 +2004,7 @@
             <div class="mt-2 font-bold text-3xl tabular-nums">
               1<span class="text-zic-muted">%</span>
             </div>
-            <div class="text-sm text-zic-muted">
+            <div class="text-base text-zic-muted">
               Disminución del rechazo de soldadura hasta el 1% en el 2016.
             </div>
           </div>
@@ -2079,7 +2015,7 @@
               SIHO
             </div>
             <div class="mt-2 font-bold text-3xl tabular-nums">4 años</div>
-            <div class="text-sm text-zic-muted">
+            <div class="text-base text-zic-muted">
               Evaluación excelente continua.
             </div>
           </div>
@@ -2089,9 +2025,9 @@
             >
               ISO
             </div>
-            <div class="mt-2 font-bold text-3xl tabular-nums">10 años</div>
-            <div class="text-sm text-zic-muted">
-              Certificados Bureau Veritas.
+            <div class="mt-2 font-bold text-3xl tabular-nums">ISO 9001</div>
+            <div class="text-base text-zic-muted">
+              Bureau Veritas — en proceso hacia la renovación.
             </div>
           </div>
         </div>
@@ -2177,7 +2113,7 @@
             </blockquote>
             <div class="mt-8 pt-8 border-t border-zic-line/10">
               <div class="font-semibold text-lg">Carmelo Moschella</div>
-              <div class="text-sm text-zic-muted mt-1">
+              <div class="text-base text-zic-muted mt-1">
                 Presidente · ZIC, C.A.
               </div>
             </div>
@@ -2216,7 +2152,7 @@
               Sede principal
             </div>
             <div class="font-semibold text-lg">Maracaibo</div>
-            <div class="text-sm text-zic-muted mt-1">
+            <div class="text-base text-zic-muted mt-1">
               Estado Zulia, Venezuela
             </div>
             <p class="mt-4 text-sm text-zic-muted leading-relaxed">
@@ -2230,7 +2166,7 @@
               Operaciones occidente
             </div>
             <div class="font-semibold text-lg">Ciudad Ojeda</div>
-            <div class="text-sm text-zic-muted mt-1">
+            <div class="text-base text-zic-muted mt-1">
               Estado Zulia, Venezuela
             </div>
             <p class="mt-4 text-sm text-zic-muted leading-relaxed">
@@ -2243,8 +2179,8 @@
             >
               Operaciones oriente
             </div>
-            <div class="font-semibold text-lg">Lecherías</div>
-            <div class="text-sm text-zic-muted mt-1">
+            <div class="font-semibold text-lg">Lechería</div>
+            <div class="text-base text-zic-muted mt-1">
               Estado Anzoátegui, Venezuela
             </div>
             <p class="mt-4 text-sm text-zic-muted leading-relaxed">
@@ -2258,9 +2194,9 @@
               Operaciones internacionales
             </div>
             <div class="font-semibold text-lg">Miami</div>
-            <div class="text-sm text-zic-muted mt-1">FL, Estados Unidos</div>
+            <div class="text-base text-zic-muted mt-1">Florida, Estados Unidos</div>
             <p class="mt-4 text-sm text-zic-muted leading-relaxed">
-              601 W Flagler St, Miami, FL 33130, USA.
+              11 NE 1st Ave, Suite 101, Miami, FL 33132, USA.
             </p>
           </div>
         </div>
@@ -2319,8 +2255,8 @@
           z-index: 1;
           background: linear-gradient(
             180deg,
-            rgba(10, 15, 13, 0.78) 0%,
-            rgba(10, 15, 13, 0.9) 100%
+            rgba(10, 15, 13, 0.66) 0%,
+            rgba(10, 15, 13, 0.78) 100%
           );
         "
       ></div>
@@ -2345,7 +2281,7 @@
             </p>
 
             <div class="mt-12 space-y-6">
-              <a href="mailto:dsantoni@zic.com.ve" class="block group reveal">
+              <a href="mailto:infozic@zic.com.ve" class="block group reveal">
                 <div
                   class="font-mono text-xs uppercase tracking-widest text-zic-green"
                 >
@@ -2356,11 +2292,11 @@
                 >
                   Daniel Santoni
                 </div>
-                <div class="text-sm text-zic-muted mt-1">
-                  dsantoni@zic.com.ve · +58 414 168 0944
+                <div class="text-base text-zic-muted mt-1">
+                  infozic@zic.com.ve · +58 414 168 0944
                 </div>
               </a>
-              <a href="mailto:fmoschella@zic.com.ve" class="block group reveal">
+              <a href="mailto:infozic@zic.com.ve" class="block group reveal">
                 <div
                   class="font-mono text-xs uppercase tracking-widest text-zic-green"
                 >
@@ -2371,8 +2307,8 @@
                 >
                   Filippo Moschella
                 </div>
-                <div class="text-sm text-zic-muted mt-1">
-                  fmoschella@zic.com.ve · +1 786 266 1895
+                <div class="text-base text-zic-muted mt-1">
+                  infozic@zic.com.ve · +1 786 266 1895
                 </div>
               </a>
             </div>
@@ -2380,7 +2316,7 @@
 
           <div class="lg:col-span-6">
             <form
-              action="https://formsubmit.co/dsantoni@zic.com.ve"
+              action="https://formsubmit.co/infozic@zic.com.ve"
               method="POST"
               class="rounded-2xl border border-zic-line/15 bg-zic-base/55 backdrop-blur-md p-8 lg:p-10"
             >
@@ -2530,6 +2466,46 @@
             >
               RIF J-07009350-1
             </p>
+
+            <div class="mt-6 flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/zicvenezuela"
+                target="_blank"
+                rel="noopener"
+                aria-label="ZIC en Instagram"
+                class="w-10 h-10 rounded-full border border-zic-line/15 flex items-center justify-center text-zic-fg/70 hover:text-zic-green hover:border-zic-green transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/user/ZuliaIndustrial"
+                target="_blank"
+                rel="noopener"
+                aria-label="ZIC en YouTube"
+                class="w-10 h-10 rounded-full border border-zic-line/15 flex items-center justify-center text-zic-fg/70 hover:text-zic-green hover:border-zic-green transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="2" y="5" width="20" height="14" rx="4" />
+                  <path d="M10 9l5 3-5 3V9z" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/zic-venezuela"
+                target="_blank"
+                rel="noopener"
+                aria-label="ZIC en LinkedIn"
+                class="w-10 h-10 rounded-full border border-zic-line/15 flex items-center justify-center text-zic-fg/70 hover:text-zic-green hover:border-zic-green transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4" />
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="md:col-span-3">
             <div
@@ -2591,16 +2567,9 @@
             <ul class="mt-4 space-y-2 text-sm">
               <li>
                 <a
-                  href="mailto:dsantoni@zic.com.ve"
+                  href="mailto:infozic@zic.com.ve"
                   class="text-zic-fg/75 hover:text-zic-fg transition-colors"
-                  >dsantoni@zic.com.ve</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:fmoschella@zic.com.ve"
-                  class="text-zic-fg/75 hover:text-zic-fg transition-colors"
-                  >fmoschella@zic.com.ve</a
+                  >infozic@zic.com.ve</a
                 >
               </li>
               <li>
@@ -2649,7 +2618,7 @@
           <span
             class="font-mono uppercase tracking-widest text-center md:text-right"
           >
-            Zulia · Anzoátegui · Miami
+            Zulia · Anzoátegui · Florida
           </span>
         </div>
       </div>
@@ -2788,16 +2757,16 @@
           {
             "@type": "PostalAddress",
             "streetAddress": "Av. Américo Vespucio, Residencias Casa Blanca",
-            "addressLocality": "Lecherías",
+            "addressLocality": "Lechería",
             "addressRegion": "Anzoátegui",
             "addressCountry": "VE"
           },
           {
             "@type": "PostalAddress",
-            "streetAddress": "601 W Flagler St",
+            "streetAddress": "11 NE 1st Ave, Suite 101",
             "addressLocality": "Miami",
             "addressRegion": "FL",
-            "postalCode": "33130",
+            "postalCode": "33132",
             "addressCountry": "US"
           }
         ],
@@ -2806,14 +2775,14 @@
             "@type": "ContactPoint",
             "contactType": "sales",
             "name": "Daniel Santoni",
-            "email": "dsantoni@zic.com.ve",
+            "email": "infozic@zic.com.ve",
             "telephone": "+58-414-168-0944"
           },
           {
             "@type": "ContactPoint",
             "contactType": "international",
             "name": "Filippo Moschella",
-            "email": "fmoschella@zic.com.ve",
+            "email": "infozic@zic.com.ve",
             "telephone": "+1-786-266-1895"
           }
         ]

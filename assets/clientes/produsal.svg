@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 96" role="img" aria-label="Produsal — Productora de Sal C.A.">
+  <g>
+    <rect x="0" y="0" width="96" height="96" fill="#4E82B4"/>
+    <path d="M0 96 C 22 40, 62 14, 96 22 L 96 96 Z" fill="#ffffff"/>
+    <path d="M0 96 C 26 66, 64 54, 96 60 L 96 96 Z" fill="#6BA294"/>
+    <path d="M0 84 C 26 54, 64 42, 96 48 L 96 60 C 64 54, 26 66, 0 96 Z" fill="#ffffff"/>
+  </g>
+  <text x="120" y="58" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" fill="#3A3A3A">Productora de Sal C.A.</text>
+</svg>

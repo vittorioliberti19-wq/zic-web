@@ -349,6 +349,42 @@
       [data-theme="light"] .offshore-image .text-zic-green {
         color: rgb(var(--zic-green)) !important;
       }
+      /* Ana León: one quality card above safety and environment. */
+      #certificaciones .cert-grid { display: grid; gap: 24px; margin-top: 48px; }
+      #certificaciones .cert-card {
+        min-width: 0; padding: clamp(24px, 3vw, 40px); border-radius: 20px;
+        border: 1px solid rgba(255,255,255,.16);
+        background: linear-gradient(135deg, rgba(8,18,14,.94), rgba(8,18,14,.72));
+        backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+        transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+      }
+      #certificaciones .cert-quality { border-top: 3px solid #22c55e; }
+      #certificaciones .cert-quality-layout { display: grid; gap: 32px; }
+      #certificaciones .cert-icon { width: 44px; height: 44px; margin-bottom: 24px; }
+      #certificaciones .cert-label { color: #d3ded7; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+      #certificaciones .cert-title { color: #fff; font-size: 26px; line-height: 1.2; font-weight: 700; margin-top: 10px; }
+      #certificaciones .cert-copy, #certificaciones .cert-list { color: #e1e9e4; font-size: 16px; line-height: 1.7; }
+      #certificaciones strong { color: #fff; font-weight: 700; }
+      #certificaciones .cert-list { padding-left: 20px; margin-top: 24px; list-style: disc; }
+      #certificaciones .cert-list li + li { margin-top: 14px; }
+      #certificaciones .cert-list li::marker { color: #22c55e; }
+      #certificaciones .cert-metrics { display: grid; gap: 28px; align-content: center; }
+      #certificaciones .cert-number { color: #4ade80; font-size: clamp(48px, 5vw, 72px); line-height: 1; letter-spacing: -.05em; font-weight: 700; }
+      #certificaciones .cert-number small { font-size: .45em; letter-spacing: 0; }
+      #certificaciones .cert-metric-copy { color: #e1e9e4; margin-top: 12px; font-size: 16px; line-height: 1.5; }
+      #certificaciones .cert-badge { display: inline-block; color: #4ade80; border: 1px solid rgba(74,222,128,.45); background: rgba(34,197,94,.08); border-radius: 8px; padding: 12px 16px; font-size: 20px; font-weight: 700; line-height: 1.4; margin: 28px 0 24px; }
+      @media (min-width: 768px) {
+        #certificaciones .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        #certificaciones .cert-quality { grid-column: 1 / -1; }
+        #certificaciones .cert-quality-layout { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 48px; }
+        #certificaciones .cert-metrics { border-left: 1px solid rgba(255,255,255,.16); padding-left: 32px; }
+      }
+      @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+        #certificaciones .cert-card:hover { transform: translateY(-5px); border-color: #22c55e; box-shadow: 0 12px 32px rgba(0,0,0,.2); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #certificaciones .cert-card { transition: none; }
+      }
       /* Mosaic captions over images — white with shadow */
       .mosaic-caption {
         color: #ffffff !important;
@@ -1869,141 +1905,55 @@
           >
         </h2>
 
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
-          >
-            <svg
-              class="text-zic-green mb-6"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
+        <div class="cert-grid">
+          <article class="cert-card cert-quality" aria-labelledby="cert-quality-title">
+            <div class="cert-quality-layout">
+              <div>
+                <svg class="cert-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#f1f5f2" d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
+                  <path fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.5 2.5 4.5-5" />
+                </svg>
+                <p class="cert-label font-mono">Gestión de Calidad</p>
+                <h3 id="cert-quality-title" class="cert-title">ISO 9001</h3>
+                <ul class="cert-list">
+                  <li>Tercera recertificación en 2018 bajo <strong>ISO 9001:2015</strong>.</li>
+                  <li>Alcance: <strong>ejecución de obras de construcción civil</strong> (edificaciones civiles e industriales), mecánica, eléctrica e instrumentación, movimiento de tierra, ingeniería y procura para el sector petrolero e industrial.</li>
+                  <li>Procesos internos optimizados para maximizar el desempeño corporativo y avanzar hacia la renovación bajo <strong>ISO 9001:2026</strong>, con eficacia y trazabilidad.</li>
+                </ul>
+              </div>
+              <div class="cert-metrics">
+                <div>
+                  <p class="cert-number">2007</p>
+                  <p class="cert-metric-copy">Desde entonces, avalado por <strong>Bureau Veritas Venezuela</strong> de forma ininterrumpida.</p>
+                </div>
+                <div>
+                  <p class="cert-number">1%</p>
+                  <p class="cert-metric-copy"><strong>Disminución del rechazo de soldadura</strong> hasta el 1% en 2016.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="cert-card" aria-labelledby="cert-safety-title">
+            <svg class="cert-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#f1f5f2" d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
+              <path fill="none" stroke="#15803d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="m7.5 12 3 3 6-6" />
             </svg>
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
-            >
-              Gestión de Calidad
-            </div>
-            <div class="mt-2 font-semibold text-xl">ISO 9001</div>
-            <p class="mt-3 text-base text-zic-muted">
-              Desde 2007, nuestro Sistema de Gestión ha sido avalado por Bureau
-              Veritas Venezuela, logrando en 2018 nuestra tercera recertificación
-              (ISO 9001:2015). Durante más de una década hemos mantenido los más
-              altos estándares de calidad en nuestro alcance principal:
-              <strong
-                >&ldquo;Ejecución de obras de construcción civil (edificaciones
-                civiles e industriales), mecánica, eléctrica e instrumentación,
-                movimiento de tierra, ingeniería y procura para el sector
-                petrolero e industrial&rdquo;</strong
-              >.
-            </p>
-            <p class="mt-3 text-base text-zic-muted">
-              Hoy, elevamos nuevamente la barra. Hemos optimizado nuestros
-              procesos internos para maximizar el desempeño corporativo y avanzar
-              firmemente hacia la renovación bajo el nuevo estándar ISO
-              9001:2026. Esta evolución confirma nuestra capacidad instalada para
-              ejecutar los proyectos más exigentes de nuestros clientes con total
-              eficacia y trazabilidad.
-            </p>
-          </div>
-          <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
-          >
-            <svg
-              class="text-zic-green mb-6"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path d="M12 2l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6z" />
-              <path d="M9 12l2 2 4-4" />
+            <p class="cert-label font-mono">Gestión de Seguridad y Salud en el Trabajo</p>
+            <p class="cert-number mt-6">4 <small>AÑOS</small></p>
+            <p class="cert-metric-copy">consecutivos con <strong>calificación excelente en SIHO</strong>.</p>
+            <h3 id="cert-safety-title" class="cert-title mt-8">Evolución hacia ISO 45001</h3>
+            <p class="cert-copy mt-4">Consolidamos una cultura de <strong>cero tolerancia a las desviaciones operativas</strong>. Protegemos de forma integral a nuestro talento humano mientras transformamos nuestro sistema SIHO actual hacia el estándar internacional <strong>ISO 45001</strong>, elevando los estándares de seguridad en cada frente de obra.</p>
+          </article>
+          <article class="cert-card" aria-labelledby="cert-environment-title">
+            <svg class="cert-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#f1f5f2" d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+              <path fill="none" stroke="#15803d" stroke-width="2" stroke-linecap="round" d="M3 21c1-5 5-7 12-11m-6 6v-5m0 5h5" />
             </svg>
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
-            >
-              Gestión de Seguridad y Salud en el Trabajo
-            </div>
-            <div class="mt-2 font-semibold text-xl">SIHO hacia ISO 45001</div>
-            <p class="mt-3 text-base text-zic-muted">
-              4 años consecutivos evaluados con calificación excelente en SIHO.
-              Protección integral de nuestro talento humano y cero tolerancia a
-              las desviaciones operativas.
-            </p>
-          </div>
-          <div
-            class="rounded-2xl border border-zic-line/10 bg-zic-deep/45 backdrop-blur-md p-8 reveal"
-          >
-            <svg
-              class="text-zic-green mb-6"
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
-              <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-            </svg>
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-muted"
-            >
-              Gestión Ambiental
-            </div>
-            <div class="mt-2 font-semibold text-xl">Cumplimiento Ambiental</div>
-            <p class="mt-3 text-base text-zic-muted">
-              En camino a ISO 14001:2026. Integración de prácticas sostenibles en
-              la planificación y ejecución de proyectos.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="mt-12 grid sm:grid-cols-3 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
-        >
-          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-green"
-            >
-              Soldadura
-            </div>
-            <div class="mt-2 font-bold text-3xl tabular-nums">
-              1<span class="text-zic-muted">%</span>
-            </div>
-            <div class="text-base text-zic-muted">
-              Disminución del rechazo de soldadura hasta el 1% en el 2016.
-            </div>
-          </div>
-          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-green"
-            >
-              SIHO
-            </div>
-            <div class="mt-2 font-bold text-3xl tabular-nums">4 años</div>
-            <div class="text-base text-zic-muted">
-              Evaluación excelente continua.
-            </div>
-          </div>
-          <div class="bg-zic-deep/45 backdrop-blur-md p-6">
-            <div
-              class="font-mono text-xs uppercase tracking-widest text-zic-green"
-            >
-              Sistema de Gestión
-            </div>
-            <div class="mt-2 font-bold text-3xl tabular-nums">Desde 2007</div>
-            <div class="text-base text-zic-muted">
-              Avalado por Bureau Veritas Venezuela de forma ininterrumpida.
-            </div>
-          </div>
+            <p class="cert-label font-mono">Gestión Ambiental</p>
+            <h3 id="cert-environment-title" class="cert-title">Cumplimiento Ambiental</h3>
+            <p class="cert-badge">En camino a ISO 14001:2026</p>
+            <p class="cert-copy">Integramos <strong>prácticas sostenibles</strong> en la planificación y ejecución de proyectos. Avanzamos hacia la certificación ambiental como parte de nuestro compromiso con una <strong>gestión integrada de excelencia</strong>.</p>
+          </article>
         </div>
       </div>
     </section>

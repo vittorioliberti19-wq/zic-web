@@ -260,13 +260,6 @@
           filter 0.25s ease,
           opacity 0.25s ease;
       }
-      .logo-tile:hover {
-        border-color: rgba(22, 163, 74, 0.4);
-      }
-      .logo-tile:hover img {
-        filter: grayscale(0);
-        opacity: 1;
-      }
       details summary::-webkit-details-marker {
         display: none;
       }
@@ -384,6 +377,16 @@
       }
       @media (prefers-reduced-motion: reduce) {
         #certificaciones .cert-card { transition: none; }
+      }
+      /* Larger gallery indicators with a 24px click target. */
+      #gente-dots { gap: 10px; padding: 10px; border-radius: 24px; background: rgba(0,0,0,.65); }
+      #gente-dots button { position: relative; width: 14px; height: 14px; flex: 0 0 14px; }
+      #gente-dots button::before { content: ""; position: absolute; inset: -5px; }
+      #gente-dots button:focus-visible { outline: 2px solid #4ade80; outline-offset: 3px; }
+      #gente-dots button[aria-current="true"] { box-shadow: 0 0 0 2px #4ade80; }
+      @media (max-width: 480px) {
+        #gente-dots { gap: 8px; }
+        #gente-dots button::before { inset: -4px; }
       }
       /* Mosaic captions over images — white with shadow */
       .mosaic-caption {
@@ -1617,7 +1620,7 @@
         <div
           class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
         >
-          <!-- 30 logos de clientes reales (brochure ZIC) -->
+          <!-- Logos de clientes (brochure ZIC) -->
           <div
             class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
@@ -2144,9 +2147,9 @@
             >
           </h2>
           <p class="lg:col-span-5 text-lg text-zic-muted reveal">
-            ZIC es la suma de quienes la levantan: soldadores, operadores,
-            ingenieros, supervisores y sus familias. Las cuadrillas que ve aquí
-            son las mismas que ejecutan cada proyecto en campo.
+            ZIC es la suma de quienes la hacen posible: un equipo estratégico,
+            administrativo, técnico y operativo que, junto a sus familias,
+            conforma el talento humano detrás de cada proyecto.
           </p>
         </div>
 
@@ -2175,13 +2178,6 @@
             src="assets/equipo/equipo-3.jpg"
             alt="Cuadrilla de obra de ZIC"
             class="gente-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
-            loading="lazy"
-          />
-          <img
-            src="assets/equipo/equipo-5.jpg"
-            alt="Equipo técnico de ZIC en los años noventa"
-            class="gente-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700"
-            style="object-position: 50% 55%"
             loading="lazy"
           />
           <img
@@ -2322,11 +2318,6 @@
               class="w-2 h-2 rounded-full bg-white/40 transition-all"
               data-idx="11"
               aria-label="Ir a la foto 12"
-            ></button>
-            <button
-              class="w-2 h-2 rounded-full bg-white/40 transition-all"
-              data-idx="12"
-              aria-label="Ir a la foto 13"
             ></button>
           </div>
         </div>
@@ -2894,6 +2885,7 @@
           dots.forEach((d, n) => {
             d.classList.toggle("bg-white", n === idx);
             d.classList.toggle("bg-white/40", n !== idx);
+            d.setAttribute("aria-current", n === idx ? "true" : "false");
           });
         }
         function start() {
@@ -2920,6 +2912,7 @@
           show(idx + 1);
           start();
         });
+        show(0);
         root.addEventListener("mouseenter", stop);
         root.addEventListener("mouseleave", start);
         start();

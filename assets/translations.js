@@ -475,11 +475,6 @@ window.zicTranslations = {
     "Oltre 20 clienti diversi, nazionali e internazionali, con elevati standard di qualità e oltre 20 anni di rapporti commerciali.",
     "Plus de 20 clients différents, nationaux et internationaux, avec des normes de qualité élevées et plus de 20 ans de relations commerciales."
   ],
-  "Principales clientes: Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito y Operaciones Acuáticas.": [
-    "Key clients: Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito and Operaciones Acuáticas.",
-    "Clienti principali: Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito e Operaciones Acuáticas.",
-    "Principaux clients : Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito et Operaciones Acuáticas."
-  ],
   "06 — Certificaciones & alianzas": [
     "06 — Certifications & partnerships",
     "06 — Certificazioni e alleanze",
@@ -749,11 +744,6 @@ window.zicTranslations = {
     "Company crews available for deployment to worksites nationwide.",
     "Squadre proprie mobilitabili nei cantieri di tutto il territorio nazionale.",
     "Équipes internes mobilisables sur les chantiers de tout le pays."
-  ],
-  "09 — Contacto": [
-    "09 — Contact",
-    "09 — Contatti",
-    "09 — Contact"
   ],
   "¿Tu próximo proyecto?": [
     "Your next project?",
@@ -1094,5 +1084,145 @@ window.zicTranslations = {
     "On continuing, you will be asked to complete a CAPTCHA before your inquiry is sent.",
     "Continuando, ti verrà chiesto di completare un CAPTCHA prima di inviare la richiesta.",
     "En continuant, une vérification CAPTCHA vous sera demandée avant l’envoi de votre demande."
+  ],
+  "11 — Contacto": [
+    "11 — Contact",
+    "11 — Contatti",
+    "11 — Contact"
+  ],
+  "Experiencia con empresas y operaciones vinculadas a PDVSA:": [
+    "Experience with companies and operations associated with PDVSA:",
+    "Esperienza con aziende e attività legate a PDVSA:",
+    "Expérience avec des entreprises et activités liées à PDVSA :"
+  ],
+  "Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito y Operaciones Acuáticas.": [
+    "Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito and Operaciones Acuáticas.",
+    "Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito e Operaciones Acuáticas.",
+    "Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&C, Refinería El Palito et Operaciones Acuáticas."
+  ],
+  "Talentos": [
+    "Careers",
+    "Carriere",
+    "Carrières"
+  ],
+  "10 — Captación de Talentos": [
+    "10 — Careers",
+    "10 — Carriere",
+    "10 — Recrutement"
+  ],
+  "Trabaja con nosotros.": [
+    "Work with us.",
+    "Lavora con noi.",
+    "Rejoignez-nous."
+  ],
+  "El talento de nuestro equipo hace posible cada obra. Este espacio estará dedicado a las oportunidades de trabajo y a las postulaciones para formar parte de ZIC.": [
+    "Our team’s talent makes every project possible. This space will be dedicated to career opportunities and applications to join ZIC.",
+    "Il talento del nostro team rende possibile ogni opera. Questo spazio sarà dedicato alle opportunità di lavoro e alle candidature per entrare in ZIC.",
+    "Le talent de nos équipes rend chaque ouvrage possible. Cet espace sera consacré aux offres d’emploi et aux candidatures pour rejoindre ZIC."
+  ],
+  "Vacantes y postulaciones": [
+    "Vacancies and applications",
+    "Posizioni aperte e candidature",
+    "Offres d’emploi et candidatures"
+  ],
+  "Tu perfil profesional": [
+    "Your professional profile",
+    "Il tuo profilo professionale",
+    "Votre profil professionnel"
+  ],
+  "Área de interés *": [
+    "Area of interest *",
+    "Area di interesse *",
+    "Domaine d’intérêt *"
+  ],
+  "Selecciona un área": [
+    "Select an area",
+    "Seleziona un’area",
+    "Sélectionnez un domaine"
+  ],
+  "Ingeniería y áreas técnicas": [
+    "Engineering and technical roles",
+    "Ingegneria e aree tecniche",
+    "Ingénierie et métiers techniques"
+  ],
+  "Operaciones y construcción": [
+    "Operations and construction",
+    "Operazioni e costruzioni",
+    "Opérations et construction"
+  ],
+  "Administración y gestión": [
+    "Administration and management",
+    "Amministrazione e gestione",
+    "Administration et gestion"
+  ],
+  "Otra área": [
+    "Other area",
+    "Altra area",
+    "Autre domaine"
+  ],
+  "Currículum (PDF) *": [
+    "CV (PDF) *",
+    "Curriculum (PDF) *",
+    "CV (PDF) *"
+  ],
+  "Envía tu currículum al departamento de Capital Humano para presentar tu perfil profesional.": [
+    "Send your CV to the Human Capital department to present your professional profile.",
+    "Invia il tuo curriculum al dipartimento Risorse Umane per presentare il tuo profilo professionale.",
+    "Envoyez votre CV au service des ressources humaines pour présenter votre profil professionnel."
+  ],
+  "Adjunta tu currículum en PDF, de hasta 5 MB.": [
+    "Attach your CV as a PDF, up to 5 MB.",
+    "Allega il tuo curriculum in PDF, fino a 5 MB.",
+    "Joignez votre CV au format PDF, de 5 Mo maximum."
+  ],
+  "Al continuar, FormSubmit te pedirá completar un CAPTCHA para enviar la postulación a Capital Humano.": [
+    "To continue, FormSubmit will ask you to complete a CAPTCHA to send your application to Human Capital.",
+    "Per continuare, FormSubmit ti chiederà di completare un CAPTCHA per inviare la candidatura alle Risorse Umane.",
+    "Pour continuer, FormSubmit vous demandera de compléter un CAPTCHA afin d’envoyer votre candidature aux ressources humaines."
+  ],
+  "Tu información y CV se enviarán a capitalhumano@zic.com.ve mediante FormSubmit para gestionar tu postulación. Incluye únicamente información profesional necesaria.": [
+    "Your information and CV will be sent to capitalhumano@zic.com.ve through FormSubmit to process your application. Include only necessary professional information.",
+    "I tuoi dati e il curriculum saranno inviati a capitalhumano@zic.com.ve tramite FormSubmit per gestire la candidatura. Includi solo le informazioni professionali necessarie.",
+    "Vos informations et votre CV seront envoyés à capitalhumano@zic.com.ve via FormSubmit pour traiter votre candidature. Incluez uniquement les informations professionnelles nécessaires."
+  ],
+  "Continuar con CAPTCHA": [
+    "Continue with CAPTCHA",
+    "Continua con CAPTCHA",
+    "Continuer avec CAPTCHA"
+  ],
+  "Área de especialidad *": [
+    "Specialty area *",
+    "Area di specializzazione *",
+    "Domaine de spécialisation *"
+  ],
+  "Ingeniería": [
+    "Engineering",
+    "Ingegneria",
+    "Ingénierie"
+  ],
+  "Administración": [
+    "Administration",
+    "Amministrazione",
+    "Administration"
+  ],
+  "Recursos Humanos": [
+    "Human Resources",
+    "Risorse Umane",
+    "Ressources humaines"
+  ],
+  "Planificación": [
+    "Planning",
+    "Pianificazione",
+    "Planification"
+  ],
+  "Disciplina o especialidad específica *": [
+    "Discipline or specific specialty *",
+    "Disciplina o specializzazione specifica *",
+    "Discipline ou spécialité précise *"
+  ],
+  "Ej.: ingeniería civil, nómina, planificación de obras": [
+    "E.g.: civil engineering, payroll, construction planning",
+    "Es.: ingegneria civile, gestione paghe, pianificazione dei lavori",
+    "Ex. : génie civil, paie, planification des travaux"
   ]
 };

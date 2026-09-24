@@ -489,6 +489,10 @@
         #menu-toggle { width: 32px; }
         .language-select { width: 90px; }
       }
+      blockquote.leadership-quote { line-height: 1.4; }
+      #talentos input, #talentos select, #talentos textarea { width: 100%; min-width: 0; margin-top: 8px; padding: 12px 16px; border-radius: 8px; border: 1px solid rgb(var(--zic-line) / .15); background: rgb(var(--zic-deep)); color: rgb(var(--zic-fg)); }
+      #talentos input:disabled, #talentos select:disabled, #talentos textarea:disabled { opacity: .6; cursor: not-allowed; }
+      #talentos input[type="file"] { font-size: 13px; }
     </style>
   </head>
   <body class="font-sans antialiased">
@@ -534,6 +538,7 @@
           <a href="#gente" class="hover:text-zic-fg transition-colors"
             >Nuestra gente</a
           >
+          <a href="#talentos" class="hover:text-zic-fg transition-colors">Talentos</a>
           <a href="#contacto" class="hover:text-zic-fg transition-colors"
             >Contacto</a
           >
@@ -1658,15 +1663,16 @@
           class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-zic-line/5 border border-zic-line/5 rounded-2xl overflow-hidden"
         >
           <!-- Logos de clientes (brochure ZIC) -->
-          <div
-            class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
-          >
-            <img
-              src="assets/clientes/pdvsa.webp"
-              alt="PDVSA — cliente ZIC"
-              loading="lazy"
-            />
-          </div>
+          <article class="col-span-2 sm:col-span-3 lg:col-span-6 bg-zic-base p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6" aria-labelledby="pdvsa-title">
+            <div class="logo-tile rounded-xl flex items-center justify-center h-28 w-40 px-5 shrink-0">
+              <img src="assets/clientes/pdvsa.webp" alt="PDVSA — cliente ZIC" loading="lazy" />
+            </div>
+            <div>
+              <h3 id="pdvsa-title" class="text-xl font-semibold mb-3">PDVSA</h3>
+              <p class="text-zic-muted leading-relaxed">Experiencia con empresas y operaciones vinculadas a PDVSA:</p>
+              <p class="mt-2 leading-relaxed">Petroindependencia, Petrozamora, Petroboscan, Petroregional del Lago, I&amp;C, Refinería El Palito y Operaciones Acuáticas.</p>
+            </div>
+          </article>
           <div
             class="logo-tile border border-transparent flex items-center justify-center h-28 px-4"
           >
@@ -1876,11 +1882,7 @@
           </div>
         </div>
 
-        <p class="mt-8 text-sm text-zic-muted">
-          Principales clientes: Petroindependencia, Petrozamora, Petroboscan,
-          Petroregional del Lago, I&amp;C, Refinería El Palito y Operaciones
-          Acuáticas.
-        </p>
+
       </div>
     </section>
 
@@ -1990,7 +1992,7 @@
     </section>
 
     <!-- ========== LIDERAZGO / FOUNDER ========== -->
-    <section class="relative py-24 lg:py-32 border-t border-zic-line/5">
+    <section id="liderazgo" class="relative py-24 lg:py-32 border-t border-zic-line/5">
       <div class="max-w-7xl mx-auto px-5 lg:px-8">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
@@ -2055,15 +2057,15 @@
             </div>
           </div>
           <div class="lg:col-span-7 reveal">
-            <blockquote class="text-2xl lg:text-3xl leading-snug font-light">
-              <span class="text-zic-green text-5xl leading-none align-top mr-2"
+            <blockquote class="leadership-quote text-2xl lg:text-3xl font-light">
+              <span class="text-zic-green" aria-hidden="true"
                 >&ldquo;</span
               >
               Hace 60 años me comprometí a caminar con humildad, respeto y
               educación. Estos tres principios han sido los cimientos para
               nuestra organización, nuestras comunidades y nuestro país.
               <span
-                class="text-zic-green text-5xl leading-none align-bottom ml-2"
+                class="text-zic-green" aria-hidden="true"
                 >&rdquo;</span
               >
             </blockquote>
@@ -2384,6 +2386,57 @@
       </div>
     </section>
 
+    <!-- ========== CAPTACIÓN DE TALENTOS ========== -->
+    <section id="talentos" class="relative py-24 lg:py-32 border-t border-zic-line/5 bg-zic-base" aria-labelledby="talentos-title">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-px bg-zic-green"></div>
+          <span class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green">10 — Captación de Talentos</span>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <h2 id="talentos-title" class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight">Trabaja con nosotros.</h2>
+            <p class="mt-6 text-lg text-zic-muted leading-relaxed">El talento de nuestro equipo hace posible cada obra. Este espacio estará dedicado a las oportunidades de trabajo y a las postulaciones para formar parte de ZIC.</p>
+            <div class="mt-8 rounded-2xl border border-zic-line/15 p-6">
+              <h3 class="text-lg font-semibold">Vacantes y postulaciones</h3>
+              <p id="talentos-status" class="mt-3 text-zic-muted leading-relaxed">Envía tu currículum al departamento de Capital Humano para presentar tu perfil profesional.</p>
+            </div>
+          </div>
+          <!-- FormSubmit handles the CAPTCHA challenge and email delivery on its server. -->
+          <form id="talent-form" action="https://formsubmit.co/capitalhumano@zic.com.ve" method="POST" enctype="multipart/form-data" aria-describedby="talentos-status" class="rounded-2xl border border-zic-line/15 bg-zic-elev/40 p-6 sm:p-8">
+            <input type="hidden" name="_subject" value="Nueva postulación — ZIC Capital Humano" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <fieldset>
+              <legend class="text-xl font-semibold mb-6">Tu perfil profesional</legend>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <label class="block text-sm">Nombre *<input name="nombre" type="text" autocomplete="name" placeholder="Nombre completo" required /></label>
+                <label class="block text-sm">Email *<input name="email" type="email" autocomplete="email" placeholder="tu@empresa.com" required /></label>
+                <label class="block text-sm">Teléfono<input name="telefono" type="tel" autocomplete="tel" placeholder="+58 414 ..." /></label>
+                <label class="block text-sm">Área de especialidad *<select name="area" required>
+                  <option value="">Selecciona un área</option>
+                  <option value="Ingeniería">Ingeniería</option>
+                  <option value="Operaciones y construcción">Operaciones y construcción</option>
+                  <option value="Administración">Administración</option>
+                  <option value="Recursos Humanos">Recursos Humanos</option>
+                  <option value="Planificación">Planificación</option>
+                  <option value="SIHO">SIHO</option>
+                  <option value="Otra área">Otra área</option>
+                </select></label>
+              </div>
+              <label class="block mt-5 text-sm">Disciplina o especialidad específica *<input name="especialidad" type="text" maxlength="120" placeholder="Ej.: ingeniería civil, nómina, planificación de obras" required /></label>
+              <label class="block mt-5 text-sm">Currículum (PDF) *<input type="file" name="attachment" accept=".pdf,application/pdf" required aria-describedby="cv-help" /></label>
+              <p id="cv-help" class="mt-2 text-sm text-zic-muted">Adjunta tu currículum en PDF, de hasta 5 MB.</p>
+              <p class="mt-5 text-sm text-zic-muted">Al continuar, FormSubmit te pedirá completar un CAPTCHA para enviar la postulación a Capital Humano.</p>
+              <p class="mt-3 text-sm text-zic-muted">Tu información y CV se enviarán a capitalhumano@zic.com.ve mediante FormSubmit para gestionar tu postulación. Incluye únicamente información profesional necesaria.</p>
+              <button type="submit" class="mt-6 w-full rounded-full bg-zic-green px-6 py-4 text-sm font-semibold">Continuar con CAPTCHA</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <section
       id="contacto"
       class="relative py-24 lg:py-32 border-t border-zic-line/5 overflow-hidden"
@@ -2447,7 +2500,7 @@
               <div class="w-10 h-px bg-zic-green"></div>
               <span
                 class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
-                >09 — Contacto</span
+                >11 — Contacto</span
               >
             </div>
             <h2
@@ -2729,6 +2782,7 @@
                   >Certificaciones</a
                 >
               </li>
+              <li><a href="#talentos" class="hover:text-zic-green transition-colors">Talentos</a></li>
               <li>
                 <a
                   href="#contacto"
@@ -2805,8 +2859,9 @@
     </footer>
 
     <!-- ========== SCRIPTS ========== -->
-    <script src="assets/translations.js"></script>
+    <script src="assets/translations.js?v=20260924"></script>
     <script src="assets/languages.js"></script>
+    <script src="assets/talentos.js"></script>
     <script>
       // Theme toggle (light/dark) — persists in localStorage, defaults to prefers-color-scheme
       (function () {

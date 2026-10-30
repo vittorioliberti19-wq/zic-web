@@ -95,11 +95,6 @@ window.zicTranslations = {
     "01 — La nostra storia",
     "01 — Notre histoire"
   ],
-  "Cinco décadas contribuyendo al desarrollo de nuestra Industria Petrolera, Petroquímica e Industrial de este gran país.": [
-    "Five decades contributing to the development of the oil, petrochemical and industrial sectors of our great country.",
-    "Cinque decenni al servizio dello sviluppo dei settori petrolifero, petrolchimico e industriale del nostro grande Paese.",
-    "Cinq décennies au service du développement des secteurs pétrolier, pétrochimique et industriel de notre grand pays."
-  ],
   "Desde 1973, ZIC, C.A. ha construido más de 450 proyectos a lo largo y ancho de Venezuela: obras civiles, mecánicas, eléctricas y de instrumentación para el sector industrial del país.": [
     "Since 1973, ZIC, C.A. has completed more than 450 projects across Venezuela: civil, mechanical, electrical and instrumentation works for the country's industrial sector.",
     "Dal 1973, ZIC, C.A. ha realizzato oltre 450 progetti in tutto il Venezuela: opere civili, meccaniche, elettriche e di strumentazione per il settore industriale del Paese.",
@@ -174,16 +169,6 @@ window.zicTranslations = {
     "02 — Services",
     "02 — Servizi",
     "02 — Services"
-  ],
-  "Ocho disciplinas.": [
-    "Eight disciplines.",
-    "Otto discipline.",
-    "Huit disciplines."
-  ],
-  "Una sola compañía.": [
-    "One company.",
-    "Un'unica azienda.",
-    "Une seule entreprise."
   ],
   "Desde el tendido de gasoductos y oleoductos hasta las obras marítimas, las edificaciones industriales y la procura nacional e internacional. Operamos on-shore y off-shore.": [
     "From gas and oil pipelines to marine works, industrial buildings and domestic and international procurement. We operate onshore and offshore.",
@@ -345,11 +330,6 @@ window.zicTranslations = {
     "03 — Punti di forza",
     "03 — Nos atouts"
   ],
-  "Cifras que respaldan medio siglo de operación.": [
-    "Figures that reflect half a century of operations.",
-    "Numeri che raccontano mezzo secolo di attività.",
-    "Des chiffres qui témoignent d'un demi-siècle d'activité."
-  ],
   "Proyectos grandes": [
     "Large projects",
     "Grandi progetti",
@@ -440,11 +420,6 @@ window.zicTranslations = {
     "04 — Esperienza",
     "04 — Expérience"
   ],
-  "+ de 450 obras ejecutadas.": [
-    "Over 450 completed projects.",
-    "Oltre 450 opere realizzate.",
-    "Plus de 450 ouvrages réalisés."
-  ],
   "Tendido de oleoductos, gasoductos y poliductos": [
     "Oil, gas and multi-product pipeline installation",
     "Posa di oleodotti, gasdotti e condotte multiprodotto",
@@ -465,11 +440,6 @@ window.zicTranslations = {
     "Clienti nazionali",
     "Clients nationaux"
   ],
-  "e internacionales.": [
-    "and international clients.",
-    "e internazionali.",
-    "et internationaux."
-  ],
   "Más de 20 clientes distintos, internacionales y nacionales, con altos estándares de calidad y más de 20 años de relación comercial.": [
     "Over 20 different domestic and international clients, with high quality standards and over 20 years of business relationships.",
     "Oltre 20 clienti diversi, nazionali e internazionali, con elevati standard di qualità e oltre 20 anni di rapporti commerciali.",
@@ -484,11 +454,6 @@ window.zicTranslations = {
     "Maturity and commitment",
     "Maturità e impegno",
     "Maturité et engagement"
-  ],
-  "en la gestión.": [
-    "in management.",
-    "nella gestione.",
-    "dans la gestion."
   ],
   "Gestión de Calidad": [
     "Quality Management",
@@ -645,16 +610,6 @@ window.zicTranslations = {
     "08 — Sedi",
     "08 — Implantations"
   ],
-  "Cuatro sedes.": [
-    "Four locations.",
-    "Quattro sedi.",
-    "Quatre implantations."
-  ],
-  "Cobertura nacional e internacional.": [
-    "Domestic and international coverage.",
-    "Presenza nazionale e internazionale.",
-    "Couverture nationale et internationale."
-  ],
   "Sede principal": [
     "Head office",
     "Sede principale",
@@ -704,16 +659,6 @@ window.zicTranslations = {
     "09 — Our people",
     "09 — Le nostre persone",
     "09 — Nos équipes"
-  ],
-  "Medio siglo de obras.": [
-    "Half a century of projects.",
-    "Mezzo secolo di opere.",
-    "Un demi-siècle de réalisations."
-  ],
-  "Y detrás de cada una, la gente.": [
-    "And behind each one, our people.",
-    "E dietro ognuna, le persone.",
-    "Et derrière chacune, nos équipes."
   ],
   "ZIC es la suma de quienes la hacen posible: un equipo estratégico, administrativo, técnico y operativo que, junto a sus familias, conforma el talento humano detrás de cada proyecto.": [
     "ZIC is the sum of the people who make it possible: a strategic, administrative, technical and operational team who, together with their families, form the human talent behind every project.",
@@ -1110,11 +1055,6 @@ window.zicTranslations = {
     "10 — Carriere",
     "10 — Recrutement"
   ],
-  "Trabaja con nosotros.": [
-    "Work with us.",
-    "Lavora con noi.",
-    "Rejoignez-nous."
-  ],
   "El talento de nuestro equipo hace posible cada obra. Este espacio estará dedicado a las oportunidades de trabajo y a las postulaciones para formar parte de ZIC.": [
     "Our team’s talent makes every project possible. This space will be dedicated to career opportunities and applications to join ZIC.",
     "Il talento del nostro team rende possibile ogni opera. Questo spazio sarà dedicato alle opportunità di lavoro e alle candidature per entrare in ZIC.",
@@ -1224,5 +1164,80 @@ window.zicTranslations = {
     "E.g.: civil engineering, payroll, construction planning",
     "Es.: ingegneria civile, gestione paghe, pianificazione dei lavori",
     "Ex. : génie civil, paie, planification des travaux"
+  ],
+  "Cinco décadas contribuyendo al desarrollo de nuestra Industria Petrolera, Petroquímica e Industrial de este gran país": [
+    "Five decades contributing to the development of the oil, petrochemical and industrial sectors of our great country",
+    "Cinque decenni al servizio dello sviluppo dei settori petrolifero, petrolchimico e industriale del nostro grande Paese",
+    "Cinq décennies au service du développement des secteurs pétrolier, pétrochimique et industriel de notre grand pays"
+  ],
+  "Ocho disciplinas": [
+    "Eight disciplines",
+    "Otto discipline",
+    "Huit disciplines"
+  ],
+  "Una sola compañía": [
+    "One company",
+    "Un'unica azienda",
+    "Une seule entreprise"
+  ],
+  "Cifras que respaldan medio siglo de operación": [
+    "Figures that reflect half a century of operations",
+    "Numeri che raccontano mezzo secolo di attività",
+    "Des chiffres qui témoignent d'un demi-siècle d'activité"
+  ],
+  "+ de 450 obras ejecutadas": [
+    "Over 450 completed projects",
+    "Oltre 450 opere realizzate",
+    "Plus de 450 ouvrages réalisés"
+  ],
+  "e internacionales": [
+    "and international clients",
+    "e internazionali",
+    "et internationaux"
+  ],
+  "en la gestión": [
+    "in management",
+    "nella gestione",
+    "dans la gestion"
+  ],
+  "Cuatro sedes": [
+    "Four locations",
+    "Quattro sedi",
+    "Quatre implantations"
+  ],
+  "Cobertura nacional e internacional": [
+    "Domestic and international coverage",
+    "Presenza nazionale e internazionale",
+    "Couverture nationale et internationale"
+  ],
+  "Medio siglo de obras": [
+    "Half a century of projects",
+    "Mezzo secolo di opere",
+    "Un demi-siècle de réalisations"
+  ],
+  "Y detrás de cada una, la gente": [
+    "And behind each one, our people",
+    "E dietro ognuna, le persone",
+    "Et derrière chacune, nos équipes"
+  ],
+  "Trabaja con nosotros": [
+    "Work with us",
+    "Lavora con noi",
+    "Rejoignez-nous"
+  ],
+  "Líneas y ductos": [
+    "Pipelines and ducts",
+    "Condotte e tubazioni",
+    "Conduites et canalisations"
+  ],
+  "Ingeniería, procura y construcción industrial": [
+    "Engineering, procurement and industrial construction",
+    "Ingegneria, approvvigionamento e costruzione industriale",
+    "Ingénierie, approvisionnement et construction industrielle"
+  ],
+  "Desde 1973, ejecutamos obras civiles, mecánicas, eléctricas y marítimas para la industria venezolana.": [
+    "Since 1973, we have delivered civil, mechanical, electrical and marine works for Venezuelan industry.",
+    "Dal 1973 realizziamo opere civili, meccaniche, elettriche e marittime per l’industria venezuelana.",
+    "Depuis 1973, nous réalisons des travaux civils, mécaniques, électriques et maritimes pour l’industrie vénézuélienne."
   ]
 };

@@ -301,46 +301,51 @@
         font-size: 1.45em;
         line-height: 0.85;
       }
-      /* Sections with video/dark bg: force white text in BOTH themes */
-      #trayectoria,
-      #servicios,
-      #fortalezas,
-      #certificaciones,
-      #contacto,
-      .mobile-stats-section,
-      .onshore-image,
-      .offshore-image {
-        color: #f1f5f2;
+      /* Photo/video sections keep a dark palette in either site theme. */
+      #top, #trayectoria, #servicios, #fortalezas, #certificaciones,
+      #contacto, .mobile-stats-section, .onshore-image, .offshore-image {
+        --zic-deep: 10 15 13; --zic-base: 17 22 19; --zic-elev: 22 28 24;
+        --zic-fg: 241 245 242; --zic-muted: 211 222 215;
+        --zic-line: 255 255 255; --zic-green: 74 222 128;
+        --image-overlay-top: rgba(10,15,13,.72);
+        --image-overlay-bot: rgba(10,15,13,.88);
+        color: rgb(var(--zic-fg)); color-scheme: dark;
       }
-      [data-theme="light"] #trayectoria *,
-      [data-theme="light"] #servicios *,
-      [data-theme="light"] #fortalezas *,
-      [data-theme="light"] #certificaciones *,
-      [data-theme="light"] #contacto *,
-      [data-theme="light"] .mobile-stats-section *,
-      [data-theme="light"] .onshore-image *,
-      [data-theme="light"] .offshore-image * {
-        color: inherit;
+      [data-theme="light"] { --zic-green: 14 122 51; }
+      .header-quote, #contacto button[type="submit"], #talentos button[type="submit"] { background-color: #0e7a33; color: #fff; }
+      .section-label { font-size: .875rem; font-weight: 700; letter-spacing: .12em; }
+      #top { display: flex; flex-direction: column; justify-content: center; }
+      .hero-copy { position: relative; z-index: 2; width: 100%; max-width: 1280px;
+        margin: 0 auto; padding: 140px 32px 260px; }
+      .hero-title { max-width: 950px; font-size: clamp(2.1rem, 4.6vw, 4.5rem);
+        font-weight: 700; line-height: 1.12; letter-spacing: -.035em; color: #fff;
+        text-wrap: balance; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
+      .hero-intro { max-width: 700px; margin-top: 24px; font-size: clamp(1rem, 1.6vw, 1.25rem);
+        line-height: 1.6; color: #f1f5f2; }
+      #top .hero-overlay { background: rgba(10,15,13,.68) !important; }
+      #top .stat-label, .mobile-stats-section .font-mono { font-size: .875rem; letter-spacing: .08em; }
+      #servicios .service-card { background: rgba(10,15,13,.88); }
+      #servicios .service-card:hover { background: rgba(10,15,13,.94); }
+      .fortalezas-grid > div { background: rgba(10,15,13,.9); }
+      .fortalezas-grid .font-mono { font-size: .875rem; font-weight: 700; letter-spacing: .08em; }
+      .onshore-image, .offshore-image { justify-content: flex-start !important; }
+      .onshore-image ul, .offshore-image ul { font-size: 1.125rem; line-height: 1.6; gap: 16px 24px; align-content: start; }
+      .onshore-image li, .offshore-image li { align-items: baseline; }
+      .timeline-marker { width: 10px; height: 10px; border-radius: 50%; background: #d3ded7;
+        margin: 0; pointer-events: none; }
+      .mosaic-caption { background: rgba(10,15,13,.88); font-size: 1.125rem; line-height: 1.5; }
+      .mosaic-caption .font-mono { display: inline-block; font-size: .875rem; font-weight: 700;
+        color: #fff; background: #0e7a33; padding: 2px 8px; border-radius: 4px; }
+      @media (min-width: 768px) { .timeline-marker { margin-inline: auto; } }
+      @media (min-width: 1024px) {
+        .onshore-image h3, .offshore-image h3 { min-height: 2.4em; }
       }
-      [data-theme="light"] #trayectoria,
-      [data-theme="light"] #servicios,
-      [data-theme="light"] #fortalezas,
-      [data-theme="light"] #certificaciones,
-      [data-theme="light"] #contacto,
-      [data-theme="light"] .mobile-stats-section,
-      [data-theme="light"] .onshore-image,
-      [data-theme="light"] .offshore-image {
-        color: #f1f5f2 !important;
+      @media (max-width: 768px) {
+        .hero-copy { padding: 128px 20px 64px; }
       }
-      [data-theme="light"] #trayectoria .text-zic-green,
-      [data-theme="light"] #servicios .text-zic-green,
-      [data-theme="light"] #fortalezas .text-zic-green,
-      [data-theme="light"] #certificaciones .text-zic-green,
-      [data-theme="light"] #contacto .text-zic-green,
-      [data-theme="light"] .mobile-stats-section .text-zic-green,
-      [data-theme="light"] .onshore-image .text-zic-green,
-      [data-theme="light"] .offshore-image .text-zic-green {
-        color: rgb(var(--zic-green)) !important;
+      @media (max-width: 480px) {
+        .onshore-image, .offshore-image { padding: 40px 20px; }
+        .onshore-image ul, .offshore-image ul { grid-template-columns: 1fr; }
       }
       /* Ana León: one quality card above safety and environment. */
       #certificaciones .cert-grid { display: grid; gap: 24px; margin-top: 48px; }
@@ -619,12 +624,10 @@
       class="relative min-h-[100svh] grain overflow-hidden"
       style="background: rgb(var(--zic-deep))"
     >
-      <h1 class="sr-only">
-        ZIC, C.A. — Zulia Industrial Constructions. Construcción industrial
-        pesada en Venezuela desde 1973. Tuberías, plantas, IPC, obras marítimas
-        y movimientos de tierra para los sectores petrolero, gas, petroquímico y
-        minero.
-      </h1>
+      <div class="hero-copy">
+        <h1 class="hero-title">Ingeniería, procura y construcción industrial</h1>
+        <p class="hero-intro">Desde 1973, ejecutamos obras civiles, mecánicas, eléctricas y marítimas para la industria venezolana.</p>
+      </div>
       <!-- Video background -->
       <video
         class="hero-bg-video"
@@ -698,7 +701,7 @@
               <div
                 class="stat-label font-mono text-sm font-bold uppercase tracking-widest text-zic-green mb-2"
               >
-                Tubería
+                Líneas y ductos
               </div>
               <div
                 class="stat-value text-3xl lg:text-4xl font-bold tabular-nums"
@@ -801,7 +804,7 @@
             <div
               class="font-mono text-xs font-bold uppercase tracking-widest text-zic-green mb-1"
             >
-              Tubería
+              Líneas y ductos
             </div>
             <div class="text-2xl font-bold tabular-nums">
               <span data-counter="1000">0</span
@@ -849,14 +852,14 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >01 — Trayectoria</span
           >
         </div>
         <h2
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
-          Cinco décadas contribuyendo al desarrollo de nuestra Industria Petrolera, Petroquímica e Industrial de este gran país.
+          Cinco décadas contribuyendo al desarrollo de nuestra Industria Petrolera, Petroquímica e Industrial de este gran país
         </h2>
         <p class="mt-6 text-lg text-zic-muted max-w-3xl reveal">
           Desde 1973, ZIC, C.A. ha construido más de 450 proyectos a lo largo y
@@ -866,13 +869,13 @@
 
         <div class="mt-16 relative">
           <div
-            class="absolute left-0 right-0 top-7 h-px bg-gradient-to-r from-transparent via-zic-green/40 to-transparent hidden md:block"
+            class="absolute left-0 right-0 top-1 h-px bg-gradient-to-r from-transparent via-zic-green/40 to-transparent hidden md:block"
           ></div>
           <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6">
             <div class="reveal">
               <div class="relative">
                 <div
-                  class="w-5 h-5 rounded-full bg-zic-green ring-4 ring-zic-green/20 mx-0 md:mx-auto shadow-lg shadow-zic-green/30"
+                  class="timeline-marker" aria-hidden="true"
                 ></div>
               </div>
               <div class="mt-5 font-mono text-base font-bold text-zic-green">
@@ -886,7 +889,7 @@
             <div class="reveal">
               <div class="relative">
                 <div
-                  class="w-4 h-4 rounded-full bg-white/50 ring-4 ring-white/10 mx-0 md:mx-auto"
+                  class="timeline-marker" aria-hidden="true"
                 ></div>
               </div>
               <div
@@ -904,7 +907,7 @@
             <div class="reveal">
               <div class="relative">
                 <div
-                  class="w-4 h-4 rounded-full bg-white/50 ring-4 ring-white/10 mx-0 md:mx-auto"
+                  class="timeline-marker" aria-hidden="true"
                 ></div>
               </div>
               <div
@@ -922,7 +925,7 @@
             <div class="reveal">
               <div class="relative">
                 <div
-                  class="w-4 h-4 rounded-full bg-white/50 ring-4 ring-white/10 mx-0 md:mx-auto"
+                  class="timeline-marker" aria-hidden="true"
                 ></div>
               </div>
               <div
@@ -941,7 +944,7 @@
             <div class="reveal">
               <div class="relative">
                 <div
-                  class="w-5 h-5 rounded-full bg-zic-green ring-4 ring-zic-green/20 mx-0 md:mx-auto shadow-lg shadow-zic-green/30"
+                  class="timeline-marker" aria-hidden="true"
                 ></div>
               </div>
               <div class="mt-5 font-mono text-base font-bold text-zic-green">
@@ -997,7 +1000,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >02 — Servicios</span
           >
         </div>
@@ -1005,8 +1008,8 @@
           <h2
             class="lg:col-span-7 font-bold text-4xl lg:text-6xl leading-tight tracking-tight reveal"
           >
-            Ocho disciplinas. <br /><span class="text-zic-muted"
-              >Una sola compañía.</span
+            Ocho disciplinas <br /><span class="text-zic-muted"
+              >Una sola compañía</span
             >
           </h2>
           <p class="lg:col-span-5 text-lg text-zic-muted reveal">
@@ -1388,14 +1391,14 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >03 — Fortalezas</span
           >
         </div>
         <h2
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
-          Cifras que respaldan medio siglo de operación.
+          Cifras que respaldan medio siglo de operación
         </h2>
 
         <div
@@ -1420,7 +1423,7 @@
             <div
               class="font-mono text-xs uppercase tracking-widest text-zic-green mb-3"
             >
-              Tubería
+              Líneas y ductos
             </div>
             <div class="font-bold text-5xl tabular-nums">
               +<span data-counter="1000">0</span
@@ -1535,14 +1538,14 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >04 — Experiencia</span
           >
         </div>
         <h2
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
-          + de 450 obras ejecutadas.
+          + de 450 obras ejecutadas
         </h2>
       </div>
 
@@ -1643,7 +1646,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >05 — Clientes</span
           >
         </div>
@@ -1651,7 +1654,7 @@
           <h2
             class="lg:col-span-7 font-bold text-4xl lg:text-6xl leading-tight tracking-tight reveal"
           >
-            Clientes nacionales <br />e internacionales.
+            Clientes nacionales <br />e internacionales
           </h2>
           <p class="lg:col-span-5 text-lg text-zic-muted reveal">
             Más de 20 clientes distintos, internacionales y nacionales, con
@@ -1926,7 +1929,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >06 — Certificaciones &amp; alianzas</span
           >
         </div>
@@ -1934,7 +1937,7 @@
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
           Madurez y compromiso <br /><span class="text-zic-muted"
-            >en la gestión.</span
+            >en la gestión</span
           >
         </h2>
 
@@ -1997,7 +2000,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >07 — Liderazgo</span
           >
         </div>
@@ -2088,15 +2091,15 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >08 — Cobertura</span
           >
         </div>
         <h2
           class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight max-w-4xl reveal"
         >
-          Cuatro sedes. <br /><span class="text-zic-muted"
-            >Cobertura nacional e internacional.</span
+          Cuatro sedes <br /><span class="text-zic-muted"
+            >Cobertura nacional e internacional</span
           >
         </h2>
 
@@ -2172,7 +2175,7 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
           <span
-            class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+            class="section-label font-mono uppercase text-zic-green"
             >09 — Nuestra gente</span
           >
         </div>
@@ -2180,9 +2183,9 @@
           <h2
             class="lg:col-span-7 font-bold text-4xl lg:text-6xl leading-tight tracking-tight reveal"
           >
-            Medio siglo de obras.
+            Medio siglo de obras
             <br /><span class="text-zic-muted"
-              >Y detrás de cada una, la gente.</span
+              >Y detrás de cada una, la gente</span
             >
           </h2>
           <p class="lg:col-span-5 text-lg text-zic-muted reveal">
@@ -2391,11 +2394,11 @@
       <div class="max-w-7xl mx-auto px-5 lg:px-8">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-10 h-px bg-zic-green"></div>
-          <span class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green">10 — Captación de Talentos</span>
+          <span class="section-label font-mono uppercase text-zic-green">10 — Captación de Talentos</span>
         </div>
         <div class="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 id="talentos-title" class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight">Trabaja con nosotros.</h2>
+            <h2 id="talentos-title" class="font-bold text-4xl lg:text-6xl leading-tight tracking-tight">Trabaja con nosotros</h2>
             <p class="mt-6 text-lg text-zic-muted leading-relaxed">El talento de nuestro equipo hace posible cada obra. Este espacio estará dedicado a las oportunidades de trabajo y a las postulaciones para formar parte de ZIC.</p>
             <div class="mt-8 rounded-2xl border border-zic-line/15 p-6">
               <h3 class="text-lg font-semibold">Vacantes y postulaciones</h3>
@@ -2499,7 +2502,7 @@
             <div class="flex items-center gap-3 mb-6">
               <div class="w-10 h-px bg-zic-green"></div>
               <span
-                class="font-mono text-xs tracking-[0.2em] uppercase text-zic-green"
+                class="section-label font-mono uppercase text-zic-green"
                 >11 — Contacto</span
               >
             </div>

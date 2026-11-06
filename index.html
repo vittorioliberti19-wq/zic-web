@@ -498,6 +498,15 @@
       #talentos input, #talentos select, #talentos textarea { width: 100%; min-width: 0; margin-top: 8px; padding: 12px 16px; border-radius: 8px; border: 1px solid rgb(var(--zic-line) / .15); background: rgb(var(--zic-deep)); color: rgb(var(--zic-fg)); }
       #talentos input:disabled, #talentos select:disabled, #talentos textarea:disabled { opacity: .6; cursor: not-allowed; }
       #talentos input[type="file"] { font-size: 13px; }
+      .affiliations { margin-top:48px; border-top:1px solid rgba(255,255,255,.2); padding-top:32px; }
+      .affiliations-label { color:#4ade80; font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase; margin-bottom:12px; }
+      .affiliations-title { color:#fff; font-size:30px; font-weight:700; margin-bottom:24px; }
+      .affiliations-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr)); gap:24px; }
+      .affiliation-card { background:#fff; border-radius:16px; padding:28px; text-align:center; display:grid; justify-items:center; align-content:center; gap:20px; }
+      .affiliation-card img { width:100%; max-width:320px; height:130px; object-fit:contain; }
+      .affiliation-card img.cpv-logo { max-width:220px; }
+      .affiliation-card p { color:#18221d; font-size:16px; font-weight:600; }
+      .affiliation-card:focus-visible { outline:3px solid #4ade80; outline-offset:5px; }
     </style>
       <link rel="stylesheet" href="/assets/1bite-credit.css" />
   </head>
@@ -1991,6 +2000,20 @@
             <p class="cert-badge">En camino a ISO 14001:2026</p>
             <p class="cert-copy">Integramos <strong>prácticas sostenibles</strong> en la planificación y ejecución de proyectos. Avanzamos hacia la certificación ambiental como parte de nuestro compromiso con una <strong>gestión integrada de excelencia</strong>.</p>
           </article>
+        </div>
+        <div class="affiliations" aria-labelledby="affiliations-title">
+          <p class="affiliations-label font-mono">Vinculación gremial</p>
+          <h3 id="affiliations-title" class="affiliations-title">Afiliaciones institucionales</h3>
+          <div class="affiliations-grid">
+            <a class="affiliation-card" href="https://cavenit.com/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/alianzas/cavenit.jpg" alt="CAVENIT" loading="lazy" />
+              <p>Cámara de Comercio Venezolano-Italiana</p>
+            </a>
+            <a class="affiliation-card" href="https://camarapetrolera.org/" target="_blank" rel="noopener noreferrer">
+              <img class="cpv-logo" src="assets/alianzas/cpv.svg" alt="Cámara Petrolera de Venezuela" loading="lazy" />
+              <p>Cámara Petrolera de Venezuela</p>
+            </a>
+          </div>
         </div>
       </div>
     </section>

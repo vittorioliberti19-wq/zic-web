@@ -1239,5 +1239,25 @@ window.zicTranslations = {
     "Since 1973, we have delivered civil, mechanical, electrical and marine works for Venezuelan industry.",
     "Dal 1973 realizziamo opere civili, meccaniche, elettriche e marittime per l’industria venezuelana.",
     "Depuis 1973, nous réalisons des travaux civils, mécaniques, électriques et maritimes pour l’industrie vénézuélienne."
+  ],
+  "Vinculación gremial": [
+    "Industry associations",
+    "Associazioni di categoria",
+    "Organisations professionnelles"
+  ],
+  "Afiliaciones institucionales": [
+    "Institutional affiliations",
+    "Affiliazioni istituzionali",
+    "Affiliations institutionnelles"
+  ],
+  "Cámara de Comercio Venezolano-Italiana": [
+    "Venezuelan-Italian Chamber of Commerce",
+    "Camera di Commercio Venezuelano-Italiana",
+    "Chambre de commerce vénézuélienne-italienne"
+  ],
+  "Cámara Petrolera de Venezuela": [
+    "Venezuelan Petroleum Chamber",
+    "Camera Petrolifera del Venezuela",
+    "Chambre pétrolière du Venezuela"
   ]
 };
